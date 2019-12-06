@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 745569da72722eb4a94efdf3dcf0e073
+timeCreated: 1530717890
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: east1
+    100002: elevator
+    100004: ESWN
+    100006: //RootNode
+    100008: MahJongDesk 1
+    100010: north
+    100012: south
+    100014: west
+    100016: E
+    100018: east
+    100020: N
+    100022: S
+    100024: Timer
+    100026: W
+    100028: TargetFlag
+    400000: east1
+    400002: elevator
+    400004: ESWN
+    400006: //RootNode
+    400008: MahJongDesk 1
+    400010: north
+    400012: south
+    400014: west
+    400016: E
+    400018: east
+    400020: N
+    400022: S
+    400024: Timer
+    400026: W
+    400028: TargetFlag
+    2100000: blinn1
+    2300000: east1
+    2300002: ESWN
+    2300004: MahJongDesk 1
+    2300006: north
+    2300008: south
+    2300010: west
+    2300012: E
+    2300014: east
+    2300016: N
+    2300018: S
+    2300020: Timer
+    2300022: W
+    2300024: TargetFlag
+    3300000: east1
+    3300002: ESWN
+    3300004: MahJongDesk 1
+    3300006: north
+    3300008: south
+    3300010: west
+    3300012: E
+    3300014: east
+    3300016: N
+    3300018: S
+    3300020: Timer
+    3300022: W
+    3300024: TargetFlag
+    4300000: MahJongDesk
+    4300002: south
+    4300004: north
+    4300006: west
+    4300008: east1
+    4300010: ESWN
+    4300012: east
+    4300014: W
+    4300016: S
+    4300018: E
+    4300020: N
+    4300022: Timer
+    4300024: TargetFlag
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: e37ac0437cb607f41976bd819d185717, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2
+    second: {fileID: 2100000, guid: 4ed04390529d70d41aa4d16d0647faa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 86e132c5365e3604dad9c141742e7c5a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

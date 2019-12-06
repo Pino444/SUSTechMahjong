@@ -1,0 +1,1002 @@
+fileFormatVersion: 2
+guid: 8984fa6eb2175314d9a66cb8b6bb660e
+timeCreated: 1529420595
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Dice
+    100002: //RootNode
+    100004: Mahjong_green
+    100006: wan1
+    100008: wan10
+    100010: wan11
+    100012: wan12
+    100014: wan13
+    100016: wan14
+    100018: wan15
+    100020: wan16
+    100022: wan17
+    100024: wan18
+    100026: wan19
+    100028: wan2
+    100030: wan20
+    100032: wan21
+    100034: wan22
+    100036: wan23
+    100038: wan24
+    100040: wan25
+    100042: wan26
+    100044: wan27
+    100046: wan28
+    100048: wan29
+    100050: wan3
+    100052: wan30
+    100054: wan31
+    100056: wan32
+    100058: wan33
+    100060: wan34
+    100062: wan35
+    100064: wan36
+    100066: wan37
+    100068: wan38
+    100070: wan39
+    100072: wan4
+    100074: wan40
+    100076: wan5
+    100078: wan6
+    100080: wan7
+    100082: wan8
+    100084: wan9
+    100086: Bai
+    100088: Bai 1
+    100090: Bai 2
+    100092: Bei
+    100094: Bei 1
+    100096: Bei 2
+    100098: Bing1
+    100100: Bing1 1
+    100102: Bing1 2
+    100104: Bing2
+    100106: Bing2 1
+    100108: Bing2 2
+    100110: Bing3
+    100112: Bing3 1
+    100114: Bing3 2
+    100116: Bing4
+    100118: Bing4 1
+    100120: Bing4 2
+    100122: Bing5
+    100124: Bing5 1
+    100126: Bing5 2
+    100128: Bing6
+    100130: Bing6 1
+    100132: Bing6 2
+    100134: Bing7
+    100136: Bing7 1
+    100138: Bing7 2
+    100140: Bing8
+    100142: Bing8 1
+    100144: Bing8 2
+    100146: Bing9
+    100148: Bing9 1
+    100150: Bing9 2
+    100152: Chun
+    100154: Chun 1
+    100156: Chun 2
+    100158: Dong
+    100160: Dong 1
+    100162: Dong 2
+    100164: Dong1
+    100166: Dong1 1
+    100168: Dong1 2
+    100170: Fa
+    100172: Fa 1
+    100174: Fa 2
+    100176: Mahjong_red
+    100178: Mahjong_yellow
+    100180: Nan
+    100182: Nan 1
+    100184: Nan 2
+    100186: Qiu
+    100188: Qiu 1
+    100190: Qiu 2
+    100192: Tiao1
+    100194: Tiao1 1
+    100196: Tiao1 2
+    100198: Tiao2
+    100200: Tiao2 1
+    100202: Tiao2 2
+    100204: Tiao3
+    100206: Tiao3 1
+    100208: Tiao3 2
+    100210: Tiao4
+    100212: Tiao4 1
+    100214: Tiao4 2
+    100216: Tiao5
+    100218: Tiao5 1
+    100220: Tiao5 2
+    100222: Tiao6
+    100224: Tiao6 1
+    100226: Tiao6 2
+    100228: Tiao7
+    100230: Tiao7 1
+    100232: Tiao7 2
+    100234: Tiao8
+    100236: Tiao8 1
+    100238: Tiao8 2
+    100240: Tiao9
+    100242: Tiao9 1
+    100244: Tiao9 2
+    100246: Wan1
+    100248: Wan1 1
+    100250: Wan1 2
+    100252: Wan2
+    100254: Wan2 1
+    100256: Wan2 2
+    100258: Wan3
+    100260: Wan3 1
+    100262: Wan3 2
+    100264: wan31 1
+    100266: wan31 2
+    100268: wan38 1
+    100270: wan38 2
+    100272: Wan4
+    100274: Wan4 1
+    100276: Wan4 2
+    100278: wan40 1
+    100280: wan40 2
+    100282: Wan5
+    100284: Wan5 1
+    100286: Wan5 2
+    100288: Wan6
+    100290: Wan6 1
+    100292: Wan6 2
+    100294: Wan7
+    100296: Wan7 1
+    100298: Wan7 2
+    100300: Wan8
+    100302: Wan8 1
+    100304: Wan8 2
+    100306: Wan9
+    100308: Wan9 1
+    100310: Wan9 2
+    100312: Xia
+    100314: Xia 1
+    100316: Xia 2
+    100318: Zhong
+    100320: Zhong 1
+    100322: Zhong 2
+    100324: Lan
+    100326: lan
+    100328: Lan 1
+    100330: Mei
+    100332: Mei 1
+    100334: Mei 2
+    100336: Xi
+    100338: Xi 1
+    100340: Xi 2
+    100342: E
+    100344: east
+    100346: elevator
+    100348: ESWN
+    100350: MahJongDesk 1
+    100352: N
+    100354: north
+    100356: S
+    100358: south
+    100360: Timer
+    100362: W
+    100364: west
+    400000: Dice
+    400002: //RootNode
+    400004: Mahjong_green
+    400006: wan1
+    400008: wan10
+    400010: wan11
+    400012: wan12
+    400014: wan13
+    400016: wan14
+    400018: wan15
+    400020: wan16
+    400022: wan17
+    400024: wan18
+    400026: wan19
+    400028: wan2
+    400030: wan20
+    400032: wan21
+    400034: wan22
+    400036: wan23
+    400038: wan24
+    400040: wan25
+    400042: wan26
+    400044: wan27
+    400046: wan28
+    400048: wan29
+    400050: wan3
+    400052: wan30
+    400054: wan31
+    400056: wan32
+    400058: wan33
+    400060: wan34
+    400062: wan35
+    400064: wan36
+    400066: wan37
+    400068: wan38
+    400070: wan39
+    400072: wan4
+    400074: wan40
+    400076: wan5
+    400078: wan6
+    400080: wan7
+    400082: wan8
+    400084: wan9
+    400086: Bai
+    400088: Bai 1
+    400090: Bai 2
+    400092: Bei
+    400094: Bei 1
+    400096: Bei 2
+    400098: Bing1
+    400100: Bing1 1
+    400102: Bing1 2
+    400104: Bing2
+    400106: Bing2 1
+    400108: Bing2 2
+    400110: Bing3
+    400112: Bing3 1
+    400114: Bing3 2
+    400116: Bing4
+    400118: Bing4 1
+    400120: Bing4 2
+    400122: Bing5
+    400124: Bing5 1
+    400126: Bing5 2
+    400128: Bing6
+    400130: Bing6 1
+    400132: Bing6 2
+    400134: Bing7
+    400136: Bing7 1
+    400138: Bing7 2
+    400140: Bing8
+    400142: Bing8 1
+    400144: Bing8 2
+    400146: Bing9
+    400148: Bing9 1
+    400150: Bing9 2
+    400152: Chun
+    400154: Chun 1
+    400156: Chun 2
+    400158: Dong
+    400160: Dong 1
+    400162: Dong 2
+    400164: Dong1
+    400166: Dong1 1
+    400168: Dong1 2
+    400170: Fa
+    400172: Fa 1
+    400174: Fa 2
+    400176: Mahjong_red
+    400178: Mahjong_yellow
+    400180: Nan
+    400182: Nan 1
+    400184: Nan 2
+    400186: Qiu
+    400188: Qiu 1
+    400190: Qiu 2
+    400192: Tiao1
+    400194: Tiao1 1
+    400196: Tiao1 2
+    400198: Tiao2
+    400200: Tiao2 1
+    400202: Tiao2 2
+    400204: Tiao3
+    400206: Tiao3 1
+    400208: Tiao3 2
+    400210: Tiao4
+    400212: Tiao4 1
+    400214: Tiao4 2
+    400216: Tiao5
+    400218: Tiao5 1
+    400220: Tiao5 2
+    400222: Tiao6
+    400224: Tiao6 1
+    400226: Tiao6 2
+    400228: Tiao7
+    400230: Tiao7 1
+    400232: Tiao7 2
+    400234: Tiao8
+    400236: Tiao8 1
+    400238: Tiao8 2
+    400240: Tiao9
+    400242: Tiao9 1
+    400244: Tiao9 2
+    400246: Wan1
+    400248: Wan1 1
+    400250: Wan1 2
+    400252: Wan2
+    400254: Wan2 1
+    400256: Wan2 2
+    400258: Wan3
+    400260: Wan3 1
+    400262: Wan3 2
+    400264: wan31 1
+    400266: wan31 2
+    400268: wan38 1
+    400270: wan38 2
+    400272: Wan4
+    400274: Wan4 1
+    400276: Wan4 2
+    400278: wan40 1
+    400280: wan40 2
+    400282: Wan5
+    400284: Wan5 1
+    400286: Wan5 2
+    400288: Wan6
+    400290: Wan6 1
+    400292: Wan6 2
+    400294: Wan7
+    400296: Wan7 1
+    400298: Wan7 2
+    400300: Wan8
+    400302: Wan8 1
+    400304: Wan8 2
+    400306: Wan9
+    400308: Wan9 1
+    400310: Wan9 2
+    400312: Xia
+    400314: Xia 1
+    400316: Xia 2
+    400318: Zhong
+    400320: Zhong 1
+    400322: Zhong 2
+    400324: Lan
+    400326: lan
+    400328: Lan 1
+    400330: Mei
+    400332: Mei 1
+    400334: Mei 2
+    400336: Xi
+    400338: Xi 1
+    400340: Xi 2
+    400342: E
+    400344: east
+    400346: elevator
+    400348: ESWN
+    400350: MahJongDesk 1
+    400352: N
+    400354: north
+    400356: S
+    400358: south
+    400360: Timer
+    400362: W
+    400364: west
+    2100000: lambert1
+    2100002: blinn1
+    2300000: Dice
+    2300002: wan1
+    2300004: wan10
+    2300006: wan11
+    2300008: wan12
+    2300010: wan13
+    2300012: wan14
+    2300014: wan15
+    2300016: wan16
+    2300018: wan17
+    2300020: wan18
+    2300022: wan19
+    2300024: wan2
+    2300026: wan20
+    2300028: wan21
+    2300030: wan22
+    2300032: wan23
+    2300034: wan24
+    2300036: wan25
+    2300038: wan26
+    2300040: wan27
+    2300042: wan28
+    2300044: wan29
+    2300046: wan3
+    2300048: wan30
+    2300050: wan31
+    2300052: wan32
+    2300054: wan33
+    2300056: wan34
+    2300058: wan35
+    2300060: wan36
+    2300062: wan37
+    2300064: wan38
+    2300066: wan39
+    2300068: wan4
+    2300070: wan40
+    2300072: wan5
+    2300074: wan6
+    2300076: wan7
+    2300078: wan8
+    2300080: wan9
+    2300082: Bai
+    2300084: Bai 1
+    2300086: Bai 2
+    2300088: Bei
+    2300090: Bei 1
+    2300092: Bei 2
+    2300094: Bing1
+    2300096: Bing1 1
+    2300098: Bing1 2
+    2300100: Bing2
+    2300102: Bing2 1
+    2300104: Bing2 2
+    2300106: Bing3
+    2300108: Bing3 1
+    2300110: Bing3 2
+    2300112: Bing4
+    2300114: Bing4 1
+    2300116: Bing4 2
+    2300118: Bing5
+    2300120: Bing5 1
+    2300122: Bing5 2
+    2300124: Bing6
+    2300126: Bing6 1
+    2300128: Bing6 2
+    2300130: Bing7
+    2300132: Bing7 1
+    2300134: Bing7 2
+    2300136: Bing8
+    2300138: Bing8 1
+    2300140: Bing8 2
+    2300142: Bing9
+    2300144: Bing9 1
+    2300146: Bing9 2
+    2300148: Chun
+    2300150: Chun 1
+    2300152: Chun 2
+    2300154: Dong
+    2300156: Dong 1
+    2300158: Dong 2
+    2300160: Dong1
+    2300162: Dong1 1
+    2300164: Dong1 2
+    2300166: Fa
+    2300168: Fa 1
+    2300170: Fa 2
+    2300172: Nan
+    2300174: Nan 1
+    2300176: Nan 2
+    2300178: Qiu
+    2300180: Qiu 1
+    2300182: Qiu 2
+    2300184: Tiao1
+    2300186: Tiao1 1
+    2300188: Tiao1 2
+    2300190: Tiao2
+    2300192: Tiao2 1
+    2300194: Tiao2 2
+    2300196: Tiao3
+    2300198: Tiao3 1
+    2300200: Tiao3 2
+    2300202: Tiao4
+    2300204: Tiao4 1
+    2300206: Tiao4 2
+    2300208: Tiao5
+    2300210: Tiao5 1
+    2300212: Tiao5 2
+    2300214: Tiao6
+    2300216: Tiao6 1
+    2300218: Tiao6 2
+    2300220: Tiao7
+    2300222: Tiao7 1
+    2300224: Tiao7 2
+    2300226: Tiao8
+    2300228: Tiao8 1
+    2300230: Tiao8 2
+    2300232: Tiao9
+    2300234: Tiao9 1
+    2300236: Tiao9 2
+    2300238: Wan1
+    2300240: Wan1 1
+    2300242: Wan1 2
+    2300244: Wan2
+    2300246: Wan2 1
+    2300248: Wan2 2
+    2300250: Wan3
+    2300252: Wan3 1
+    2300254: Wan3 2
+    2300256: wan31 1
+    2300258: wan31 2
+    2300260: wan38 1
+    2300262: wan38 2
+    2300264: Wan4
+    2300266: Wan4 1
+    2300268: Wan4 2
+    2300270: wan40 1
+    2300272: wan40 2
+    2300274: Wan5
+    2300276: Wan5 1
+    2300278: Wan5 2
+    2300280: Wan6
+    2300282: Wan6 1
+    2300284: Wan6 2
+    2300286: Wan7
+    2300288: Wan7 1
+    2300290: Wan7 2
+    2300292: Wan8
+    2300294: Wan8 1
+    2300296: Wan8 2
+    2300298: Wan9
+    2300300: Wan9 1
+    2300302: Wan9 2
+    2300304: Xia
+    2300306: Xia 1
+    2300308: Xia 2
+    2300310: Zhong
+    2300312: Zhong 1
+    2300314: Zhong 2
+    2300316: Lan
+    2300318: lan
+    2300320: Lan 1
+    2300322: Mei
+    2300324: Mei 1
+    2300326: Mei 2
+    2300328: Xi
+    2300330: Xi 1
+    2300332: Xi 2
+    2300334: E
+    2300336: east
+    2300338: MahJongDesk 1
+    2300340: N
+    2300342: north
+    2300344: S
+    2300346: south
+    2300348: Timer
+    2300350: W
+    2300352: west
+    3300000: Dice
+    3300002: wan1
+    3300004: wan10
+    3300006: wan11
+    3300008: wan12
+    3300010: wan13
+    3300012: wan14
+    3300014: wan15
+    3300016: wan16
+    3300018: wan17
+    3300020: wan18
+    3300022: wan19
+    3300024: wan2
+    3300026: wan20
+    3300028: wan21
+    3300030: wan22
+    3300032: wan23
+    3300034: wan24
+    3300036: wan25
+    3300038: wan26
+    3300040: wan27
+    3300042: wan28
+    3300044: wan29
+    3300046: wan3
+    3300048: wan30
+    3300050: wan31
+    3300052: wan32
+    3300054: wan33
+    3300056: wan34
+    3300058: wan35
+    3300060: wan36
+    3300062: wan37
+    3300064: wan38
+    3300066: wan39
+    3300068: wan4
+    3300070: wan40
+    3300072: wan5
+    3300074: wan6
+    3300076: wan7
+    3300078: wan8
+    3300080: wan9
+    3300082: Bai
+    3300084: Bai 1
+    3300086: Bai 2
+    3300088: Bei
+    3300090: Bei 1
+    3300092: Bei 2
+    3300094: Bing1
+    3300096: Bing1 1
+    3300098: Bing1 2
+    3300100: Bing2
+    3300102: Bing2 1
+    3300104: Bing2 2
+    3300106: Bing3
+    3300108: Bing3 1
+    3300110: Bing3 2
+    3300112: Bing4
+    3300114: Bing4 1
+    3300116: Bing4 2
+    3300118: Bing5
+    3300120: Bing5 1
+    3300122: Bing5 2
+    3300124: Bing6
+    3300126: Bing6 1
+    3300128: Bing6 2
+    3300130: Bing7
+    3300132: Bing7 1
+    3300134: Bing7 2
+    3300136: Bing8
+    3300138: Bing8 1
+    3300140: Bing8 2
+    3300142: Bing9
+    3300144: Bing9 1
+    3300146: Bing9 2
+    3300148: Chun
+    3300150: Chun 1
+    3300152: Chun 2
+    3300154: Dong
+    3300156: Dong 1
+    3300158: Dong 2
+    3300160: Dong1
+    3300162: Dong1 1
+    3300164: Dong1 2
+    3300166: Fa
+    3300168: Fa 1
+    3300170: Fa 2
+    3300172: Nan
+    3300174: Nan 1
+    3300176: Nan 2
+    3300178: Qiu
+    3300180: Qiu 1
+    3300182: Qiu 2
+    3300184: Tiao1
+    3300186: Tiao1 1
+    3300188: Tiao1 2
+    3300190: Tiao2
+    3300192: Tiao2 1
+    3300194: Tiao2 2
+    3300196: Tiao3
+    3300198: Tiao3 1
+    3300200: Tiao3 2
+    3300202: Tiao4
+    3300204: Tiao4 1
+    3300206: Tiao4 2
+    3300208: Tiao5
+    3300210: Tiao5 1
+    3300212: Tiao5 2
+    3300214: Tiao6
+    3300216: Tiao6 1
+    3300218: Tiao6 2
+    3300220: Tiao7
+    3300222: Tiao7 1
+    3300224: Tiao7 2
+    3300226: Tiao8
+    3300228: Tiao8 1
+    3300230: Tiao8 2
+    3300232: Tiao9
+    3300234: Tiao9 1
+    3300236: Tiao9 2
+    3300238: Wan1
+    3300240: Wan1 1
+    3300242: Wan1 2
+    3300244: Wan2
+    3300246: Wan2 1
+    3300248: Wan2 2
+    3300250: Wan3
+    3300252: Wan3 1
+    3300254: Wan3 2
+    3300256: wan31 1
+    3300258: wan31 2
+    3300260: wan38 1
+    3300262: wan38 2
+    3300264: Wan4
+    3300266: Wan4 1
+    3300268: Wan4 2
+    3300270: wan40 1
+    3300272: wan40 2
+    3300274: Wan5
+    3300276: Wan5 1
+    3300278: Wan5 2
+    3300280: Wan6
+    3300282: Wan6 1
+    3300284: Wan6 2
+    3300286: Wan7
+    3300288: Wan7 1
+    3300290: Wan7 2
+    3300292: Wan8
+    3300294: Wan8 1
+    3300296: Wan8 2
+    3300298: Wan9
+    3300300: Wan9 1
+    3300302: Wan9 2
+    3300304: Xia
+    3300306: Xia 1
+    3300308: Xia 2
+    3300310: Zhong
+    3300312: Zhong 1
+    3300314: Zhong 2
+    3300316: Lan
+    3300318: lan
+    3300320: Lan 1
+    3300322: Mei
+    3300324: Mei 1
+    3300326: Mei 2
+    3300328: Xi
+    3300330: Xi 1
+    3300332: Xi 2
+    3300334: E
+    3300336: east
+    3300338: MahJongDesk 1
+    3300340: N
+    3300342: north
+    3300344: S
+    3300346: south
+    3300348: Timer
+    3300350: W
+    3300352: west
+    4300000: Dice
+    4300002: wan1
+    4300004: wan2
+    4300006: wan3
+    4300008: wan4
+    4300010: wan5
+    4300012: wan6
+    4300014: wan7
+    4300016: wan8
+    4300018: wan9
+    4300020: wan10
+    4300022: wan11
+    4300024: wan12
+    4300026: wan13
+    4300028: wan14
+    4300030: wan15
+    4300032: wan16
+    4300034: wan17
+    4300036: wan18
+    4300038: wan19
+    4300040: wan20
+    4300042: wan21
+    4300044: wan22
+    4300046: wan23
+    4300048: wan24
+    4300050: wan25
+    4300052: wan26
+    4300054: wan27
+    4300056: wan28
+    4300058: wan29
+    4300060: wan30
+    4300062: wan31
+    4300064: wan32
+    4300066: wan33
+    4300068: wan34
+    4300070: wan35
+    4300072: wan36
+    4300074: wan37
+    4300076: wan38
+    4300078: wan39
+    4300080: wan40
+    4300082: Bing1
+    4300084: Bing2
+    4300086: Bing3
+    4300088: Bing4
+    4300090: Bing5
+    4300092: Bing6
+    4300094: Bing7
+    4300096: Bing8
+    4300098: Bing9
+    4300100: Tiao1
+    4300102: Tiao2
+    4300104: Tiao3
+    4300106: Tiao4
+    4300108: Tiao5
+    4300110: Tiao6
+    4300112: Tiao7
+    4300114: Tiao8
+    4300116: Tiao9
+    4300118: Wan1
+    4300120: Wan2
+    4300122: Wan3
+    4300124: Wan4
+    4300126: Wan5
+    4300128: Wan6
+    4300130: Wan7
+    4300132: Wan8
+    4300134: Wan9
+    4300136: Dong
+    4300138: Nan
+    4300140: Zhong
+    4300142: Bei
+    4300144: Fa
+    4300146: Bai
+    4300148: Chun
+    4300150: Xia
+    4300152: Qiu
+    4300154: Dong1
+    4300156: Bing1
+    4300158: Bing2
+    4300160: Bing3
+    4300162: Bing4
+    4300164: Bing5
+    4300166: Bing6
+    4300168: Bing7
+    4300170: Bing8
+    4300172: Bing9
+    4300174: Tiao1
+    4300176: Tiao2
+    4300178: Tiao3
+    4300180: Tiao4
+    4300182: Tiao5
+    4300184: Tiao6
+    4300186: Tiao7
+    4300188: Tiao8
+    4300190: Tiao9
+    4300192: Wan1
+    4300194: Wan2
+    4300196: Wan3
+    4300198: Wan4
+    4300200: Wan5
+    4300202: Wan6
+    4300204: Wan7
+    4300206: Wan8
+    4300208: Wan9
+    4300210: Dong
+    4300212: Nan
+    4300214: Zhong
+    4300216: wan31
+    4300218: Bei
+    4300220: Fa
+    4300222: Bai
+    4300224: Chun
+    4300226: Xia
+    4300228: Qiu
+    4300230: wan38
+    4300232: Dong1
+    4300234: wan40
+    4300236: Bing1
+    4300238: Bing2
+    4300240: Bing3
+    4300242: Bing4
+    4300244: Bing5
+    4300246: Bing6
+    4300248: Bing7
+    4300250: Bing8
+    4300252: Bing9
+    4300254: Tiao1
+    4300256: Tiao2
+    4300258: Tiao3
+    4300260: Tiao4
+    4300262: Tiao5
+    4300264: Tiao6
+    4300266: Tiao7
+    4300268: Tiao8
+    4300270: Tiao9
+    4300272: Wan1
+    4300274: Wan2
+    4300276: Wan3
+    4300278: Wan4
+    4300280: Wan5
+    4300282: Wan6
+    4300284: Wan7
+    4300286: Wan8
+    4300288: Wan9
+    4300290: Dong
+    4300292: Nan
+    4300294: Zhong
+    4300296: wan31
+    4300298: Bei
+    4300300: Fa
+    4300302: Bai
+    4300304: Chun
+    4300306: Xia
+    4300308: Qiu
+    4300310: wan38
+    4300312: Dong1
+    4300314: wan40
+    4300316: Xi
+    4300318: Lan
+    4300320: Mei
+    4300322: Xi
+    4300324: Lan
+    4300326: Mei
+    4300328: Xi
+    4300330: lan
+    4300332: Mei
+    4300334: MahJongDesk
+    4300336: south
+    4300338: north
+    4300340: west
+    4300342: east
+    4300344: W
+    4300346: S
+    4300348: E
+    4300350: N
+    4300352: Timer
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: e37ac0437cb607f41976bd819d185717, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2
+    second: {fileID: 2100000, guid: 4ed04390529d70d41aa4d16d0647faa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 86e132c5365e3604dad9c141742e7c5a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
