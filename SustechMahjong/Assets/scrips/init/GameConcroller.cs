@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameConcroller : MonoBehaviour
@@ -23,7 +24,7 @@ public class GameConcroller : MonoBehaviour
         {
             //进入大厅
             PlayerPrefs.SetString("nickName",nickName);
-            Application.LoadLevel("hall");
+            SceneManager.LoadScene("hall");
         }
     }
 

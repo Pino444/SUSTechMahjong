@@ -2,12 +2,34 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="iTweenEditor" t="Include">
+          <e p="Editor" t="Include">
+            <e p="iTweenEventDataEditor.cs" t="Include" />
+            <e p="iTweenPathEditor.cs" t="Include" />
+          </e>
+          <e p="Examples" t="Include">
+            <e p="StartAndStopTween.cs" t="Include" />
+          </e>
+          <e p="Helper Classes" t="Include">
+            <e p="EventParamMappings.cs" t="Include" />
+            <e p="Vector3OrTransform.cs" t="Include" />
+            <e p="Vector3OrTransformArray.cs" t="Include" />
+          </e>
+          <e p="iTween.cs" t="Include" />
+          <e p="iTweenEvent.cs" t="Include" />
+          <e p="iTweenPath.cs" t="Include" />
+          <e p="README.txt" t="Include" />
+        </e>
         <e p="scrips" t="Include">
-          <e p="GameConcroller.cs" t="Include" />
           <e p="hall" t="Include">
+            <e p="gameController.cs" t="Include" />
             <e p="getName.cs" t="Include" />
+          </e>
+          <e p="init" t="Include">
+            <e p="GameConcroller.cs" t="Include" />
           </e>
         </e>
       </e>
