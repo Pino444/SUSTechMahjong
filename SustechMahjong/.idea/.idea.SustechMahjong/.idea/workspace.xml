@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/GameConcroller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/GameConcroller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +19,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -89,6 +89,7 @@
       <workItem from="1575606419913" duration="943000" />
       <workItem from="1575620710738" duration="2262000" />
       <workItem from="1575640453240" duration="3209000" />
+      <workItem from="1575683694965" duration="329000" />
     </task>
     <servers />
   </component>
