@@ -6,8 +6,8 @@ using System.Threading;
 using UnityEngine;
 
 public class NetworkCore : MonoBehaviour {
-    public string serverAddress = "10.21.6.104";
-    public int serverPort = 5555;
+    public string serverAddress;
+    public int serverPort;
     
     private TcpClient _client;
     private NetworkStream _stream;  // C#中采用NetworkStream的方式, 可以类比于python网络编程中的socket
@@ -15,38 +15,19 @@ public class NetworkCore : MonoBehaviour {
     private byte[] _buffer = new byte[1024];  // 接收消息的buffer
     private string receiveMsg = "";
     private bool isConnected = false;
+    
 
-
-    void Start() {
+    public void OnApplicationQuit() {
+        SendData("Close");  // 退出的时候先发一个退出的信号给服务器, 使得连接被正确关闭
+        Debug.Log("exit sent!");
+        CloseConnection ();
     }
-
-//    public void OnApplicationQuit() {
-//        Dictionary<string, string> dict = new Dictionary<string, string>()
-//        {
-//            {"code", "exit"}
-//        };
-//        SendData(Encode(dict));  // 退出的时候先发一个退出的信号给服务器, 使得连接被正确关闭
-//        Debug.Log("exit sent!");
-//        CloseConnection ();
-//    }
-//
-//    // --------------------public--------------------
+    
     public void Test() {
         SetupConnection();
         SendData("test");
         Debug.Log("start!");
     }
-
-//    public void SendGameData(int score, int health) {
-//        Dictionary<string, string> dict = new Dictionary<string, string>()
-//        {
-//            {"code", "gds"},
-//            {"score", score.ToString()},
-//            {"health", health.ToString()}
-//        };
-//
-//        SendData(Encode(dict));
-//    }
 
     // -----------------------private---------------------
     private void SetupConnection() {
@@ -101,37 +82,5 @@ public class NetworkCore : MonoBehaviour {
             receiveMsg = "";
         }
     }
-
-    // ---------------------util----------------------
-    // encode dict to to json and wrap it with \r\n as delimiter
-    
-//    string Encode(Dictionary<string, string> dict)
-//    {
-//        string json = Json.Encode(dict);
-//        string header = "\r\n" + json.Length.ToString() + "\r\n";
-//        string result = header + json;
-//        Debug.Log("encode result:" + result);
-//        return result;
-//
-//    }
-//    
-//    // decode data, 注意要解决粘包的问题, 这个程序写法同GameLobby中的相应模块一模一样
-//    // 参考 https://github.com/imcheney/GameLobby/blob/master/server/util.py
-//    Dictionary<string, string> Decode(string raw)
-//    {
-//        string payload_str = "";
-//        string raw_leftover = raw;
-//        if (raw.Substring(0, 2).Equals("\r\n"))
-//        {
-//            int index = raw.IndexOf("\r\n", 2);
-//            int payload_length = int.Parse(raw.Substring(2, index - 2 + 1));  // 注意, C#'s substring takes start and length as args
-//            if (raw.Length >= index + 2 + payload_length)
-//            {
-//                payload_str = raw.Substring(index + 2, payload_length);
-//                raw_leftover = raw.Substring(index + 2 + payload_length);
-//            }
-//        }
-//        return Json.Decode<Dictionary<string, string>>(payload_str);
-//    }
 
 }

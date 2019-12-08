@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/testNetwork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/testNetwork.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +26,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/scrips/hall/getName.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/GameConcroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/ClientSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/networkManeger.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
       </list>
     </option>
@@ -106,6 +103,7 @@
       <workItem from="1575640453240" duration="3209000" />
       <workItem from="1575683694965" duration="329000" />
       <workItem from="1575794769104" duration="4302000" />
+      <workItem from="1575821158763" duration="594000" />
     </task>
     <servers />
   </component>

@@ -1,25 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  //using 关键字用于在程序中包含命名空间。一个程序可以包含多个 using 语句。
 
-public class UIManager : MonoBehaviour {
-    public InputField scoreInputField;
-    public InputField healthInputField;
-
+public class networkManeger : MonoBehaviour
+{
+    // Start is called before the first frame update
     NetworkCore networkCore;
     // Use this for initialization
     void Start () {
         networkCore = GetComponent<NetworkCore>();
     }
-    
+
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         
     }
 
-    public void OnTestButton() {
+    public void onTestClick()
+    {
         networkCore.Test();
     }
-    
 }
