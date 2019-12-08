@@ -8,6 +8,16 @@ public class gameController : MonoBehaviour
     public GameObject setting;
     public GameObject introText;
     
+    NetworkCore networkCore;
+    
+    void Start () {
+        networkCore = GetComponent<NetworkCore>();
+    }
+    
+    public void OnTestButton() {
+        networkCore.Test();
+    }
+    
     private GameObject occupy = null;
     public void onSettingButtonClick()
     {
@@ -52,5 +62,10 @@ public class gameController : MonoBehaviour
     public void onResetNameButtonClick()
     {
         SceneManager.LoadScene("init");
+    }
+
+    public void onCreateRoomButtonClick()
+    {
+        SceneManager.LoadScene("room1");
     }
 }
