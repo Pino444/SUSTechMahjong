@@ -2,28 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultDecoder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultDecoder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultEncoder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultEncoder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Extensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Json.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Json.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonAttributes.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonMapper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonParser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/circle.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/close.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/delete.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/retype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/retype.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/text.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/tips.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/title_join.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/加入房间/title_join.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +55,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,10 +67,11 @@
         <option value="$PROJECT_DIR$/Assets/scrips/hall/getName.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/GameConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/ClientSocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/networkManeger.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
       </list>
     </option>
   </component>
@@ -120,6 +141,7 @@
       <workItem from="1575821158763" duration="594000" />
       <workItem from="1575857552979" duration="347000" />
       <workItem from="1575861589228" duration="186000" />
+      <workItem from="1575866498290" duration="2288000" />
     </task>
     <servers />
   </component>

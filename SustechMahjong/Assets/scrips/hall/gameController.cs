@@ -7,17 +7,12 @@ public class gameController : MonoBehaviour
 {
     public GameObject setting;
     public GameObject introText;
-    
-    NetworkCore networkCore;
-    
+    public GameObject joinRoomPanel;
+    public GameObject quitGamePanel;
     void Start () {
-        networkCore = GetComponent<NetworkCore>();
+        
     }
-    
-    public void OnTestButton() {
-        networkCore.Test();
-    }
-    
+
     private GameObject occupy = null;
     public void onSettingButtonClick()
     {
@@ -67,5 +62,31 @@ public class gameController : MonoBehaviour
     public void onCreateRoomButtonClick()
     {
         SceneManager.LoadScene("room1");
+    }
+
+    public void onJoinRoomButtonClick()
+    {
+        joinRoomPanel.SetActive(true);
+    }
+
+    public void onCloseJoinRoomButtonClick()
+    {
+        joinRoomPanel.SetActive(false);
+    }
+
+    public void onQuitGameButtonClick()
+    {
+        quitGamePanel.SetActive(true);
+    }
+
+    public void onYesButtonClick()
+    { 
+        UnityEditor.EditorApplication.isPlaying = false;
+        //Application.Quit();
+    }
+
+    public void onNoButtonClick()
+    {
+        quitGamePanel.SetActive(false);
     }
 }

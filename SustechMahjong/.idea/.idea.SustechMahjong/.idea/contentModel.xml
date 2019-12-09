@@ -44,6 +44,9 @@
             <e p="NetworkCore.cs" t="Include" />
             <e p="NetworkManager.cs" t="Include" />
           </e>
+          <e p="room" t="Include">
+            <e p="RoomConcroller.cs" t="Include" />
+          </e>
         </e>
         <e p="testNetwork.cs" t="Include" />
       </e>
