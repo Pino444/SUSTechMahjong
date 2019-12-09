@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using UnityEngine;
-
+using Tiny;
 public class NetworkCore : MonoBehaviour {
     public string serverAddress;
     public int serverPort;
@@ -83,4 +83,31 @@ public class NetworkCore : MonoBehaviour {
         }
     }
 
+    string Encode(Dictionary<string, string> dict)
+    {
+        string json = Json.Encode(dict);
+        string header = "\r\n" + json.Length.ToString() + "\r\n";
+        string result = header + json;
+        Debug.Log("encode result:" + result);
+        return result;
+    }
+    
+    // decode data, 注意要解决粘包的问题, 这个程序写法同GameLobby中的相应模块一模一样
+    // 参考 https://github.com/imcheney/GameLobby/blob/master/server/util.py
+    Dictionary<string, string> Decode(string raw)
+    {
+        string payload_str = "";
+        string raw_leftover = raw;
+        if (raw.Substring(0, 2).Equals("\r\n"))
+        {
+            int index = raw.IndexOf("\r\n", 2);
+            int payload_length = int.Parse(raw.Substring(2, index - 2 + 1));  // 注意, C#'s substring takes start and length as args
+            if (raw.Length >= index + 2 + payload_length)
+            {
+                payload_str = raw.Substring(index + 2, payload_length);
+                raw_leftover = raw.Substring(index + 2 + payload_length);
+            }
+        }
+        return Json.Decode<Dictionary<string, string>>(payload_str);
+    }
 }

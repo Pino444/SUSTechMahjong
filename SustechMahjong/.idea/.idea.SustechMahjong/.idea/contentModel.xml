@@ -32,6 +32,15 @@
             <e p="GameConcroller.cs" t="Include" />
           </e>
           <e p="Network" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="DefaultDecoder.cs" t="Include" />
+            <e p="DefaultEncoder.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="Json.cs" t="Include" />
+            <e p="JsonAttributes.cs" t="Include" />
+            <e p="JsonBuilder.cs" t="Include" />
+            <e p="JsonMapper.cs" t="Include" />
+            <e p="JsonParser.cs" t="Include" />
             <e p="NetworkCore.cs" t="Include" />
             <e p="NetworkManager.cs" t="Include" />
           </e>

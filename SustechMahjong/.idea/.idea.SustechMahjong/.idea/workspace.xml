@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultDecoder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultDecoder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultEncoder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/DefaultEncoder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Extensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Json.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Json.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonAttributes.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonBuilder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonMapper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/JsonParser.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -104,6 +118,8 @@
       <workItem from="1575683694965" duration="329000" />
       <workItem from="1575794769104" duration="4302000" />
       <workItem from="1575821158763" duration="594000" />
+      <workItem from="1575857552979" duration="347000" />
+      <workItem from="1575861589228" duration="186000" />
     </task>
     <servers />
   </component>
