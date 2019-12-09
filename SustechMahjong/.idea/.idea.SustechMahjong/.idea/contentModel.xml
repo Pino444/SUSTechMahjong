@@ -45,6 +45,7 @@
             <e p="NetworkManager.cs" t="Include" />
           </e>
           <e p="room" t="Include">
+            <e p="MentorController.cs" t="Include" />
             <e p="RoomConcroller.cs" t="Include" />
           </e>
         </e>
