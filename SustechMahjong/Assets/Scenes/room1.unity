@@ -1554,13 +1554,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 186306318}
   m_HandleRect: {fileID: 1440940134}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2014276136}
+        m_MethodName: onScoreValueChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1001 &261826152
@@ -2456,7 +2467,7 @@ GameObject:
   - component: {fileID: 438655863}
   - component: {fileID: 438655862}
   m_Layer: 5
-  m_Name: Button
+  m_Name: scoreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6020,7 +6031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u6ED1\u52A8\u6765\u9009\u62E9\u79EF\u5206"
 --- !u!222 &1052377140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12104,6 +12115,7 @@ MonoBehaviour:
   quitRoomButton: {fileID: 834908687}
   quitRoomPanel: {fileID: 650941431}
   chooseMentorPanel: {fileID: 1352889583}
+  chooseCourseButton: {fileID: 1052377137}
 --- !u!114 &2014276137
 MonoBehaviour:
   m_ObjectHideFlags: 0
