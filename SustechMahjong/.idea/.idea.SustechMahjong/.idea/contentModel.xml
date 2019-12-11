@@ -49,7 +49,6 @@
             <e p="RoomConcroller.cs" t="Include" />
           </e>
         </e>
-        <e p="testNetwork.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

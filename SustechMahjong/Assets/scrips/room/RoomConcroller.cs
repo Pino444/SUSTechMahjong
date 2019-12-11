@@ -7,7 +7,7 @@ public class RoomConcroller : MonoBehaviour
 {
     public GameObject quitRoomButton;
     public GameObject quitRoomPanel;
-
+    public GameObject chooseMentorPanel;
 
     public void onQuitRoomButtonClick()
     {
@@ -22,5 +22,10 @@ public class RoomConcroller : MonoBehaviour
     public void onNoButtonClick()
     {
         quitRoomPanel.SetActive(false);
+    }
+
+    public void onMentorClick()
+    {
+        chooseMentorPanel.SetActive(false);
     }
 }
