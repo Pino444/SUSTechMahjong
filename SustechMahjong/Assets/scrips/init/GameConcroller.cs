@@ -9,6 +9,7 @@ public class GameConcroller : MonoBehaviour
 {
     public InputField nickName;
     public Text remind;
+    public GameObject networkManeger;
     public void setNameButtonPress()
     {
         //判断昵称后跳转到大厅
@@ -23,6 +24,10 @@ public class GameConcroller : MonoBehaviour
         else
         {
             //进入大厅
+            networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+            {
+                {"nickName", nickName}
+            });
             PlayerPrefs.SetString("nickName",nickName);
             SceneManager.LoadScene("hall");
         }

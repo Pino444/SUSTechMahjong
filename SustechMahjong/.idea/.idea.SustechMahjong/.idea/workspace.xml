@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/MahJongTexture 2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/MahJongTexture 2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/test.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/test.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/MahJongTexture.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/MahJongTexture.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/MahJongTexture.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/MahJongTexture.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/init.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/init.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +33,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/resources/玩家信息/base_name.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,11 +44,14 @@
         <option value="$PROJECT_DIR$/Assets/scrips/Network/ClientSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/networkManeger.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" />
       </list>
     </option>
   </component>
@@ -120,6 +126,7 @@
       <workItem from="1575944592246" duration="466000" />
       <workItem from="1576049270334" duration="962000" />
       <workItem from="1576072063865" duration="1949000" />
+      <workItem from="1576158899570" duration="3899000" />
     </task>
     <servers />
   </component>

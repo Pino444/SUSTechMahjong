@@ -42,7 +42,7 @@
             <e p="JsonMapper.cs" t="Include" />
             <e p="JsonParser.cs" t="Include" />
             <e p="NetworkCore.cs" t="Include" />
-            <e p="NetworkManager.cs" t="Include" />
+            <e p="NetworkManeger.cs" t="Include" />
           </e>
           <e p="room" t="Include">
             <e p="MentorController.cs" t="Include" />

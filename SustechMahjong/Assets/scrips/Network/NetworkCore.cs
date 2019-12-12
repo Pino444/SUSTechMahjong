@@ -15,22 +15,21 @@ public class NetworkCore : MonoBehaviour {
     private byte[] _buffer = new byte[1024];  // 接收消息的buffer
     private string receiveMsg = "";
     private bool isConnected = false;
-    
+    public Queue<Dictionary<String,String>> msgDict = new Queue<Dictionary<String,String>>();
 
     public void OnApplicationQuit() {
-        SendData("Close");  // 退出的时候先发一个退出的信号给服务器, 使得连接被正确关闭
+        Dictionary<string, string> dict = new Dictionary<string, string>()
+        {
+            {"code", "exit"}
+        };
+        SendData(dict);  // 退出的时候先发一个退出的信号给服务器, 使得连接被正确关闭
         Debug.Log("exit sent!");
         CloseConnection ();
     }
     
-    public void Test() {
-        SetupConnection();
-        SendData("test");
-        Debug.Log("start!");
-    }
 
     // -----------------------private---------------------
-    private void SetupConnection() {
+    public void SetupConnection() {
         try {
             _thread = new Thread(ReceiveData);  // 传入函数ReceiveData作为thread的任务
             _thread.IsBackground = true;
@@ -45,7 +44,7 @@ public class NetworkCore : MonoBehaviour {
         }
     }
 
-    private void ReceiveData() {  // 这个函数被后台线程执行, 不断地在while循环中跑着
+    public void ReceiveData() {  // 这个函数被后台线程执行, 不断地在while循环中跑着
         Debug.Log ("Entered ReceiveData function...");
         if (!isConnected)  // stop the thread
             return;
@@ -54,6 +53,7 @@ public class NetworkCore : MonoBehaviour {
             try {
                 numberOfBytesRead = _stream.Read(_buffer, 0, _buffer.Length);
                 receiveMsg = Encoding.ASCII.GetString(_buffer, 0, numberOfBytesRead);
+                msgDict.Enqueue(Decode(receiveMsg));
                 _stream.Flush();
                 Debug.Log(receiveMsg);
                 receiveMsg = "";
@@ -64,8 +64,9 @@ public class NetworkCore : MonoBehaviour {
         }
     }
 
-    private void SendData(String msgToSend)
+    public void SendData(Dictionary<string, string> dict)
     {
+        String msgToSend = Json.Encode(dict);
         byte[] bytesToSend = Encoding.ASCII.GetBytes(msgToSend);
         if (_stream.CanWrite)
         {
