@@ -46,12 +46,12 @@ public class Mainlogic : MonoBehaviour
     public GameObject name2;
     public GameObject name3;
     public GameObject name4;
-
-    public GameObject ready1;
-    public GameObject ready2;
-    public GameObject ready3;
-    public GameObject ready4;
+    
     public GameObject networkManeger;
+    public GameObject roomText;
+    public GameObject canvas;
+    public GameObject cpgh;
+    public Button chibut;
     private void Awake()
     {
         Debug.Log("awake run");
@@ -113,6 +113,18 @@ public class Mainlogic : MonoBehaviour
                 }
                 break;
             case "specialope":
+                canvas = GameObject.Find("Canvas");
+                cpgh=canvas.transform.Find("cpgh").gameObject;
+                chibut=cpgh.transform.Find("chiButton").GetComponent<Button>();
+                Button peng = cpgh.transform.Find("pengButton").GetComponent<Button>();
+                Button gang = cpgh.transform.Find("gangButton").GetComponent<Button>();
+                Button hu = cpgh.transform.Find("huButton").GetComponent<Button>();
+                Button cancel = cpgh.transform.Find("cancelButton").GetComponent<Button>();
+                chibut.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]);
+                peng.gameObject.SetActive(de.butt[3]);
+                gang.gameObject.SetActive(de.butt[4]);
+                hu.gameObject.SetActive(de.butt[5]);
+                cancel.gameObject.SetActive(true);
                 
                 break;
             case "play":
@@ -137,15 +149,13 @@ public class Mainlogic : MonoBehaviour
                 name3.transform.Find("Text").GetComponent<Text>().text = de.names[2];
                 name4.transform.Find("Text").GetComponent<Text>().text = de.names[3];
 
-                ready1 = GameObject.Find("Player"); 
-                ready2 = GameObject.Find("nextPlayer");
-                ready3 = GameObject.Find("oppositePlayer");
-                ready4 = GameObject.Find("lastPlayer");
-                ready1.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[0]);
-                ready2.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[1]);
-                ready3.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[2]);
-                ready4.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[3]);
-                
+                name1.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[0]);
+                name2.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[1]);
+                name3.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[2]);
+                name4.transform.Find("ready").GetComponent<Image>().gameObject.SetActive(de.readystatement[3]);
+
+                roomText = GameObject.Find("roomNumberText");
+                roomText.GetComponent<Text>().text = de.room;
                 
                 break;
             case "id":

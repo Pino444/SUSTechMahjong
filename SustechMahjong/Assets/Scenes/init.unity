@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5b56e4772264c84b90b870f7e842fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverAddress: 10.21.49.246
+  serverAddress: 10.21.82.248
   serverPort: 5555
 --- !u!114 &858297346
 MonoBehaviour:
@@ -999,11 +999,11 @@ MonoBehaviour:
   name2: {fileID: 0}
   name3: {fileID: 0}
   name4: {fileID: 0}
-  ready1: {fileID: 0}
-  ready2: {fileID: 0}
-  ready3: {fileID: 0}
-  ready4: {fileID: 0}
   networkManeger: {fileID: 0}
+  roomText: {fileID: 0}
+  canvas: {fileID: 0}
+  cpgh: {fileID: 0}
+  chibut: {fileID: 0}
 --- !u!1 &928779229
 GameObject:
   m_ObjectHideFlags: 0

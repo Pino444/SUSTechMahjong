@@ -10,10 +10,10 @@ public class decodedic
     public int[] cards;
     public int player;
     public string[] names=new string[4];
-    public string[] sop = {"chi1","chi2","chi3","peng","gang","hu" };
+    string[] sop = {"chi1","chi2","chi3","peng","gang","hu" };
     public bool[] butt = new bool[7];//special op 's message
     public int[][] chipai = new int[3][];
-
+    public string room;
     public bool[] readystatement = new bool[4];
     // Start is called before the first frame updbuttate
     public void decodeinstruction(Dictionary<string,string> dic)
@@ -26,6 +26,12 @@ public class decodedic
             player = (player + 4 - room_id) % 4;
         
         }
+        if (dic.ContainsKey("room"))
+        {
+            room = dic["room"];
+
+        }
+        
         
         if (type.Equals("card")| type.Equals("pair")|type.Equals("initcard")|type.Equals("college"))
         {
@@ -38,21 +44,44 @@ public class decodedic
             }
         }else if (type.Equals("specialope"))
         {
-            for(int i = 0; i < 7; i++)
+            for(int i = 0; i < 6; i++)
             {
-                string[] cardlist = content.Split(' ');
+                Debug.Log(sop.Length);
+                Debug.Log(sop[i]);
                 content = dic[sop[i]];
+                Debug.Log("content: "+content);
                 butt[i] = false;
                 if (content != null)
                 {
+                    
+                    string[] cardlist = content.Split(' ');
                     butt[i] = true;
                     int[] cardsy = new int[cardlist.Length];
-                    for (int j = 0; j < cards.Length; j++)
+                    Debug.Log(cardlist);
+                    for (int j = 0; j < cardlist.Length; j++)
                     {
                         cardsy[j] = int.Parse(cardlist[j]);
                     }
-                    chipai[i] = cardsy;
+
+                    if (i < 3)
+                    {
+                        chipai[i] = cardsy;
+                    }
+
+                    if (i == 5)
+                    {
+                        if (content.Equals("0"))
+                        {
+                            butt[5] = false;
+                        }
+                        else
+                        {
+                            butt[5] = true;
+                        }
+                    }
+                    
                 }
+                
             }
             
 
@@ -61,7 +90,7 @@ public class decodedic
             content = dic["card"];
             string[] cardlist = content.Split(' ');
             cards = new int[cardlist.Length];
-            for (int i = 0; i < cards.Length; i++)
+            for (int i = 0; i < cardlist.Length; i++)
             {
                 cards[i] = int.Parse(cardlist[i]);
             }
@@ -87,7 +116,7 @@ public class decodedic
                 if (na[i-1].Equals("_"))
                 {
                     
-                    names[pl] = "!!!";
+                    names[pl] = "等待加入";
                 }
                 else
                 {
