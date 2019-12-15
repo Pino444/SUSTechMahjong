@@ -6,8 +6,10 @@ using UnityEngine;
 public class NetworkManeger : MonoBehaviour
 {
     NetworkCore networkCore;
+//    Mainlogic _mainlogic = new Mainlogic();
     public static NetworkManeger instance;
 
+    public Dictionary<String, String> dic;
     //全局唯一性  
     private void Awake()
     {
@@ -25,13 +27,11 @@ public class NetworkManeger : MonoBehaviour
     void Start () {
         networkCore = GetComponent<NetworkCore>();
         networkCore.SetupConnection();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-//        networkCore.ReceiveData();
         startRecive();
     }
 
@@ -42,18 +42,16 @@ public class NetworkManeger : MonoBehaviour
 
     public void startRecive()
     {
-        while (true)
-        {
+//        while (true)
+//        {
             if (networkCore.msgDict.Count != 0)
             {
+                Debug.Log("队列长度"+networkCore.msgDict.Count);
                 Dictionary<String,String> command = networkCore.msgDict.Dequeue();
-                commander(command);
+                dic = command;
+                gameObject.GetComponent<Mainlogic>().excute(command);
+//                _mainlogic.excute(command);
             }
-        }
-    }
-
-    public void commander(Dictionary<String,String> command)
-    {
-        print(command);
+//        }
     }
 }

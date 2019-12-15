@@ -2,17 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_吃.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_吃.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_杠.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_杠.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_碰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_碰.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_胡.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_胡.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_过.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示_过.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示框.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示框.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示牌.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/提示牌.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠特效4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰特效4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡特效4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/自摸特效8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/a4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/base_loser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/base_loser.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/base_winner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/base_winner.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/button_next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/button_next.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/button_share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/button_share.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/result1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/result1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/result2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/result2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/title.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/win.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/牌局结束/win.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/test.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/init.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/init.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +139,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/hall.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/玩家信息/base_name.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/Timer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,14 +164,20 @@
         <option value="$PROJECT_DIR$/Assets/scrips/Network/ClientSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/networkManeger.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/room/teller.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
       </list>
     </option>
   </component>
@@ -95,10 +221,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="4863">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="4863" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -127,6 +253,9 @@
       <workItem from="1576049270334" duration="962000" />
       <workItem from="1576072063865" duration="1949000" />
       <workItem from="1576158899570" duration="3899000" />
+      <workItem from="1576245745952" duration="1762000" />
+      <workItem from="1576322572548" duration="10484000" />
+      <workItem from="1576395780527" duration="14561000" />
     </task>
     <servers />
   </component>

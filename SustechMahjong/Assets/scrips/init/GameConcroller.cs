@@ -10,6 +10,13 @@ public class GameConcroller : MonoBehaviour
     public InputField nickName;
     public Text remind;
     public GameObject networkManeger;
+
+    private void Awake()
+    {
+        Debug.Log("awake run");
+        networkManeger = GameObject.Find("Network");
+    }
+
     public void setNameButtonPress()
     {
         //判断昵称后跳转到大厅
@@ -24,10 +31,12 @@ public class GameConcroller : MonoBehaviour
         else
         {
             //进入大厅
-            networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
-            {
-                {"nickName", nickName}
-            });
+//            networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+//            {
+//                {"type", "name"},
+//                {"socket_id", PlayerPrefs.GetString("socket_id")},
+//                {"content",nickName}
+//            });
             PlayerPrefs.SetString("nickName",nickName);
             SceneManager.LoadScene("hall");
         }

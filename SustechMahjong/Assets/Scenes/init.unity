@@ -900,9 +900,10 @@ GameObject:
   - component: {fileID: 858297347}
   - component: {fileID: 858297346}
   - component: {fileID: 858297345}
+  - component: {fileID: 858297348}
   m_Layer: 0
   m_Name: Network
-  m_TagString: Untagged
+  m_TagString: net
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -919,7 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5b56e4772264c84b90b870f7e842fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverAddress: 10.21.38.70
+  serverAddress: 10.21.49.246
   serverPort: 5555
 --- !u!114 &858297346
 MonoBehaviour:
@@ -947,6 +948,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &858297348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858297344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ff2f378740541aab410674ea00b6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardlist:
+  - {fileID: 1734649888337926, guid: 28bf9582b6654e546913d1bd98c5fef5, type: 3}
+  - {fileID: 1706056772609370, guid: e214e9936016d5f4caeb320b3eba94eb, type: 3}
+  - {fileID: 1084225409556278, guid: 8a3f0aa3a643b944c8dfaad7ebe676cc, type: 3}
+  - {fileID: 1186967871980810, guid: 3a833a6c7a2490547bd8f07507aad934, type: 3}
+  - {fileID: 1887307355385166, guid: 004a248aeb718e3439157db30badfe91, type: 3}
+  - {fileID: 1643516752250440, guid: 597bfa0d1bbe90040a4453b1a7f67115, type: 3}
+  - {fileID: 1867899472546436, guid: cb7a50ab5eb585f4c8d5d75936406ae7, type: 3}
+  - {fileID: 1398265221745332, guid: 4e3ec66f33d248a4c9765b417900f3ea, type: 3}
+  - {fileID: 1583523828991374, guid: 4ea93c59974ba55448915f6c18d068aa, type: 3}
+  - {fileID: 1418680125206474, guid: 9dfd07ae4faa824459dafc31ecce4de2, type: 3}
+  - {fileID: 1103374839813662, guid: bec9a4013162165409b40d93d24a7de0, type: 3}
+  - {fileID: 1675351603288584, guid: 21d933234178a17419e5bcfce882dacf, type: 3}
+  - {fileID: 1089379524283620, guid: a89c06c1aeea4fd4fbbcb879953391d8, type: 3}
+  - {fileID: 1096140550020248, guid: acf349076021ac140bc49c1e88a9cbbc, type: 3}
+  - {fileID: 1612399783408610, guid: 07d348dda86d40f4680563bca18e8460, type: 3}
+  - {fileID: 1728708736712512, guid: 1e8d941955cbb2c4e8468047f084c09e, type: 3}
+  - {fileID: 1372283941774676, guid: 6d3120e187838a4459a21c1714c00bb7, type: 3}
+  - {fileID: 1405781932924386, guid: 3be6ac17ceb892945b353378aafb0235, type: 3}
+  - {fileID: 1501707530180010, guid: e87e84dac30133b4eb85c81980b2e1f8, type: 3}
+  - {fileID: 1328733725991964, guid: 1a7f9d32a94bb9840a94c6c3be7439bd, type: 3}
+  - {fileID: 1252038248222370, guid: 246652a363dce654484e05a05ee80add, type: 3}
+  - {fileID: 1514838894186874, guid: e1a2c4f6b2acd554b9c9b73ec9a999ce, type: 3}
+  - {fileID: 1503046781103264, guid: 96150ee727a090548978a0909769d0c4, type: 3}
+  - {fileID: 1105833622631978, guid: 1f53296e408be034a8936e99e6f586db, type: 3}
+  - {fileID: 1523347492471206, guid: 881f8cd8188090445930abb807283d51, type: 3}
+  - {fileID: 1411782844729150, guid: 3f619f51075f4b74f8ee9a3e38cd9ae4, type: 3}
+  - {fileID: 1141741386652668, guid: 0b70507c93bd39d488b6e73ec0fb19c3, type: 3}
+  - {fileID: 1069748439723090, guid: be80768cf1b9fac419da38ee8dc79139, type: 3}
+  - {fileID: 1574059196819700, guid: 6446b619031fa3740bb567c61f140a85, type: 3}
+  - {fileID: 1511705339842842, guid: 5bc54302dd836fc4cb2c050cb44f124c, type: 3}
+  - {fileID: 1912918866021828, guid: d2ebd37b244936c4a8c4ef89b00cc02e, type: 3}
+  - {fileID: 1680787707883462, guid: f164de8bfa132b74bb84c550360fe16e, type: 3}
+  - {fileID: 1186090809026622, guid: 0b26b4efac6da3d43b58fb18d3c051f0, type: 3}
+  - {fileID: 1844652446135566, guid: 7d1e6bc6d7cebb8489549251df625cb0, type: 3}
+  name1: {fileID: 0}
+  name2: {fileID: 0}
+  name3: {fileID: 0}
+  name4: {fileID: 0}
+  ready1: {fileID: 0}
+  ready2: {fileID: 0}
+  ready3: {fileID: 0}
+  ready4: {fileID: 0}
+  networkManeger: {fileID: 0}
 --- !u!1 &928779229
 GameObject:
   m_ObjectHideFlags: 0

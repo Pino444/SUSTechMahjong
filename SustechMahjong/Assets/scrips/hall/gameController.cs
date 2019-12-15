@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class gameController : MonoBehaviour
 {
@@ -9,8 +11,12 @@ public class gameController : MonoBehaviour
     public GameObject introText;
     public GameObject joinRoomPanel;
     public GameObject quitGamePanel;
-    void Start () {
-        
+    public GameObject networkManeger;
+    public InputField roomNumber;
+    private void Awake()
+    {
+        Debug.Log("awake run");
+        networkManeger = GameObject.Find("Network");
     }
 
     private GameObject occupy = null;
@@ -61,6 +67,12 @@ public class gameController : MonoBehaviour
 
     public void onCreateRoomButtonClick()
     {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "create"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"content",PlayerPrefs.GetString("nickName")}
+        });
         SceneManager.LoadScene("room1");
     }
 
@@ -81,12 +93,32 @@ public class gameController : MonoBehaviour
 
     public void onYesButtonClick()
     { 
-        UnityEditor.EditorApplication.isPlaying = false;
-        //Application.Quit();
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "quitGame"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")}
+        });
+        //UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 
     public void onNoButtonClick()
     {
         quitGamePanel.SetActive(false);
+    }
+
+    public void onJoinRoomConfirmButtonClick()
+    {
+        String Number = this.roomNumber.text;
+        print("roomNumber" + Number);
+        PlayerPrefs.SetString("room",Number);
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "joinroom"},
+            {"room",Number},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"content",PlayerPrefs.GetString("nickName")}
+        });
+        SceneManager.LoadScene("room1");
     }
 }

@@ -945,12 +945,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -2996,7 +2996,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1354499051}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1949068372}
+        m_MethodName: onJoinRoomConfirmButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1354499051
@@ -3991,6 +4002,8 @@ MonoBehaviour:
   introText: {fileID: 1963016019}
   joinRoomPanel: {fileID: 1433129385}
   quitGamePanel: {fileID: 748673907}
+  networkManeger: {fileID: 0}
+  roomNumber: {fileID: 2086528154}
 --- !u!1 &1956065010
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,13 +4262,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 43
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E\n\u8FD9\u91CC\u662F\u8BF4\u660E"
+  m_Text: "1.\u5BFC\u5E08\u9009\u62E9\u3002\u4E0D\u540C\u5BFC\u5E08\u6709\u4E0D\u540C\u6280\u80FD\u548C\u4E66\u9662\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u5927\u5BB6\u83B7\u53D6\u66F4\u9AD8\u7684\u5206\u6570\r\n2.\u79EF\u5206\u9009\u724C\u3002\u53D1\u724C\u540E\uFF0C\u53EF\u4EE5\u4F7F\u7528\u81EA\u5DF1\u7684\u79EF\u5206\u7ADE\u4EF7\u9009\u53D6\u81EA\u5DF1\u60F3\u8981\u7684\u724C"
 --- !u!222 &1963016022
 CanvasRenderer:
   m_ObjectHideFlags: 0

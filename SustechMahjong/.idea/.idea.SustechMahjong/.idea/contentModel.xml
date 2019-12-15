@@ -33,6 +33,7 @@
           </e>
           <e p="Network" t="Include">
             <e p="AssemblyInfo.cs" t="Include" />
+            <e p="decodedic.cs" t="Include" />
             <e p="DefaultDecoder.cs" t="Include" />
             <e p="DefaultEncoder.cs" t="Include" />
             <e p="Extensions.cs" t="Include" />
@@ -41,15 +42,19 @@
             <e p="JsonBuilder.cs" t="Include" />
             <e p="JsonMapper.cs" t="Include" />
             <e p="JsonParser.cs" t="Include" />
+            <e p="Mainlogic.cs" t="Include" />
             <e p="NetworkCore.cs" t="Include" />
             <e p="NetworkManeger.cs" t="Include" />
+            <e p="playersitting.cs" t="Include" />
           </e>
           <e p="room" t="Include">
+            <e p="getRoomNumber.cs" t="Include" />
             <e p="MentorController.cs" t="Include" />
             <e p="RoomConcroller.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>
         </e>
+        <e p="test.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

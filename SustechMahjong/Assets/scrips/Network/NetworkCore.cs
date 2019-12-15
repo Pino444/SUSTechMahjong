@@ -53,7 +53,9 @@ public class NetworkCore : MonoBehaviour {
             try {
                 numberOfBytesRead = _stream.Read(_buffer, 0, _buffer.Length);
                 receiveMsg = Encoding.ASCII.GetString(_buffer, 0, numberOfBytesRead);
+                print("hgy"+Decode(receiveMsg));
                 msgDict.Enqueue(Decode(receiveMsg));
+//                Debug.Log(msgDict);
                 _stream.Flush();
                 Debug.Log(receiveMsg);
                 receiveMsg = "";
@@ -97,18 +99,20 @@ public class NetworkCore : MonoBehaviour {
     // 参考 https://github.com/imcheney/GameLobby/blob/master/server/util.py
     Dictionary<string, string> Decode(string raw)
     {
-        string payload_str = "";
-        string raw_leftover = raw;
-        if (raw.Substring(0, 2).Equals("\r\n"))
-        {
-            int index = raw.IndexOf("\r\n", 2);
-            int payload_length = int.Parse(raw.Substring(2, index - 2 + 1));  // 注意, C#'s substring takes start and length as args
-            if (raw.Length >= index + 2 + payload_length)
-            {
-                payload_str = raw.Substring(index + 2, payload_length);
-                raw_leftover = raw.Substring(index + 2 + payload_length);
-            }
-        }
-        return Json.Decode<Dictionary<string, string>>(payload_str);
+        
+//        string payload_str = "";
+//        string raw_leftover = raw;
+//        if (raw.Substring(0, 2).Equals("\r\n"))
+//        {
+//            int index = raw.IndexOf("\r\n", 2);
+//            int payload_length = int.Parse(raw.Substring(2, index - 2 + 1));  // 注意, C#'s substring takes start and length as args
+//            if (raw.Length >= index + 2 + payload_length)
+//            {
+//                payload_str = raw.Substring(index + 2, payload_length);
+//                print("payload_str"+payload_str);
+//                raw_leftover = raw.Substring(index + 2 + payload_length);
+//            }
+//        }
+        return Json.Decode<Dictionary<string, string>>(raw);
     }
 }
