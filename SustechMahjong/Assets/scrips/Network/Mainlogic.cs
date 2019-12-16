@@ -80,6 +80,7 @@ public class Mainlogic : MonoBehaviour
         de.decodeinstruction(command);
         switch (de.type){
             case "initcard":
+                GameObject.Find("readyButton").SetActive(false);
                 for (int i = 1; i <= 4; i++)
                 {
                     int pl = (i + 4 - de.room_id) % 4;
@@ -87,23 +88,30 @@ public class Mainlogic : MonoBehaviour
                     Array.Copy(de.cards, i * 9-9, plc, 0, 9);
                     givecard(plc, pl);
                 }
+                
                 break;
-            case "askcard":
+            case "askcard"://服务器让你给他传要打的牌
+                canvas = GameObject.Find("Canvas");
+                Image timei=canvas.transform.Find("TimerImage").GetComponent<Image>();
+                timei.gameObject.SetActive(true);
+                timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(1);
                 int cardid=LeftClick(0);
-                networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+                if (cardid >= 0)
                 {
-                    {"type", "playcard"},
-                    {"socket_id", PlayerPrefs.GetString("socket_id")},
-                    {"room",PlayerPrefs.GetString("room")},
-                    {"room_id",PlayerPrefs.GetString("room_id")},
-                    {"content",""+cardid}
-                });
+                    timei.gameObject.SetActive(false);
+                    networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+                    {
+                        {"type", "playcard"},
+                        {"socket_id", PlayerPrefs.GetString("socket_id")},
+                        {"room",PlayerPrefs.GetString("room")},
+                        {"room_id",PlayerPrefs.GetString("room_id")},
+                        {"content",""+cardid}
+                    });
+                }
+                
                 break;
-            case "card":
-                if (de.cards.Length == 9)
-                {
-                    givecard(de.cards, de.player);
-                }else if (de.cards.Length == 2)
+            case "card"://服务器给你传谁打了什么牌
+                if (de.cards.Length == 2)
                 {
                     getscorecard(de.cards, de.player);
 
@@ -129,6 +137,7 @@ public class Mainlogic : MonoBehaviour
                 break;
             case "play":
                 dropcard(de.cards[0], de.player);
+                
                 break;
             case "cpg":
                 outcard(de.cards, de.player);
@@ -176,6 +185,13 @@ public class Mainlogic : MonoBehaviour
         }
     }
 
+    void setcardstatement()
+    {
+        foreach (CardObject c in players[0].handcard)
+        {
+            c.card.GetComponent<cardactivity>().setcan(true);
+        }
+    }
 //摸牌
     void getcard(int id,int player)
     {
@@ -248,6 +264,7 @@ public class Mainlogic : MonoBehaviour
                 {
                     if (c.card == go)
                     {
+                        
                         return c.id;
                     }
                 }

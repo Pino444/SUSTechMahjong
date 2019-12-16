@@ -33,6 +33,7 @@
           </e>
           <e p="Network" t="Include">
             <e p="AssemblyInfo.cs" t="Include" />
+            <e p="cardactivity.cs" t="Include" />
             <e p="decodedic.cs" t="Include" />
             <e p="DefaultDecoder.cs" t="Include" />
             <e p="DefaultEncoder.cs" t="Include" />

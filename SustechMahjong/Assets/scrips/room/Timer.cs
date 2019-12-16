@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ public class Timer : MonoBehaviour
     public GameObject timerText;
     public GameObject timer;
     private Text _text;
-
+    private int statement = -1;//1: 打牌超时； 2 选导师超时； 3 投积分超时 4 吃碰杠胡超时 5 积分选牌超时
     void Start()
     {
         _text = timerText.GetComponent<Text>();
@@ -26,5 +27,15 @@ public class Timer : MonoBehaviour
         {
             timer.SetActive(false);
         }
+    }
+
+    public void setStatment(int state)
+    {
+        statement = state;
+    }
+
+    public int getStatement()
+    {
+        return statement;
     }
 }
