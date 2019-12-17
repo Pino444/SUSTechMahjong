@@ -44,15 +44,51 @@ public class RoomConcroller : MonoBehaviour
 
     public void onMentorClick()
     {
+        
+        
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "supervisor"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","1"}
+        });
         chooseMentorPanel.SetActive(false);
     }
 
     public void onScoreValueChange(float value)
     {
         print(value);
+        PlayerPrefs.SetString("score",Convert.ToString((int)value));
         chooseCourseButton.GetComponent<Text>().text = "投入的积分是：\n"+Convert.ToString((int)value);
     }
 
+    public void onScoreConfirmButtonClick()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "score"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content",PlayerPrefs.GetString("score")}
+        });
+//        chooseCourseButton.GetComponent<Button>().interactable = false;
+        chooseCourseButton.SetActive(false);
+    }
+
+    public void onCourseConfirmButtonClick()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "score"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","10"}
+        });
+    }
     private bool ready = false;
     public void onReadyButtonClick()
     {

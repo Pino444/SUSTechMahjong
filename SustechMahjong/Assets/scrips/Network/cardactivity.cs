@@ -8,6 +8,8 @@ public class cardactivity : MonoBehaviour
     bool can=false;
     public Vector3 self;
     public bool first;
+    int _id=0;
+    bool dapai=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,23 @@ public class cardactivity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkmousein();
+        if (can)
+        {
+            checkmousein();
+            if (dapai)
+            {
+                LeftClick();
+
+            }
+            
+        }
     }
 
+
+    public void setdapai()
+    {
+        dapai = true;
+    }
 
     public void setcan(bool bol)
     {
@@ -32,9 +48,14 @@ public class cardactivity : MonoBehaviour
         return can;
     }
 
+    public void setid(int id)
+    {
+        _id = id;
+    }
+
     private void OnEnter()
     {
-        print("in");
+
        
         Vector3 v3 = self;
         v3.y += 0.005f;
@@ -45,7 +66,7 @@ public class cardactivity : MonoBehaviour
 
     private void OnExit()
     {
-        print("out");
+
         gameObject.transform.localPosition = self;
     }
     void checkmousein()
@@ -57,19 +78,18 @@ public class cardactivity : MonoBehaviour
         {
             GameObject go = hit.collider.gameObject;
 
-            print(go == gameObject);
-            if (can && first && go == gameObject)
+            if ( first && go == gameObject)
             {
                 first = false;
                 OnEnter();
-            } else if (!first & can && go!=gameObject)
+            } else if (!first &&  go!=gameObject)
             {
                 first = true;
                 OnExit();
             }
 
         }
-        else if (!first & can)
+        else if (!first )
         {
             first = true;
             OnExit();
@@ -79,7 +99,7 @@ public class cardactivity : MonoBehaviour
 
     }
 
-    public int LeftClick(int player)
+    public int LeftClick()
     {
         if (Input.GetMouseButtonUp(0))
         {
@@ -90,13 +110,21 @@ public class cardactivity : MonoBehaviour
                 GameObject go = hit.collider.gameObject;
                 if (go == gameObject)
                 {
-                    
+                    print(_id);
+                    GameObject.Find("Network").GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+                    {
+                        {"type", "playcard"},
+                        {"socket_id", PlayerPrefs.GetString("socket_id")},
+                        {"room",PlayerPrefs.GetString("room")},
+                        {"room_id",PlayerPrefs.GetString("room_id")},
+                        {"content",""+_id}
+                    });
+                    dapai = false;
+                    GameObject.Find("TimerImage").gameObject.SetActive(false);
+                    return _id;
                 }
             }
-            else
-            {
-                return 0;
-            }
+            
 
         }
         return -1;

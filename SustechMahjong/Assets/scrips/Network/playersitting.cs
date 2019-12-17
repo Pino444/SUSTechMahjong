@@ -216,7 +216,7 @@ class Thisplayer : playersetting
         base.handposition = new Vector3(0.14f , 0.285f, 0.377f);
         base.dropzone = new Vector3(0.06f, 0.007f, 0.09f);
         base.outzone = new Vector3(-0.32f, 0.007f, 0.278f);
-        base.getpos = new Vector3(-0.19f, 0.27f, 0.29f);
+        base.getpos = new Vector3(-0.18f, 0.285f, 0.377f); 
 
     }
 

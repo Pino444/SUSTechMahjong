@@ -33,7 +33,7 @@ public class decodedic
         }
         
         
-        if (type.Equals("card")| type.Equals("pair")|type.Equals("initcard")|type.Equals("college"))
+        if (type.Equals("card")| type.Equals("pair")|type.Equals("initcard")|type.Equals("college")|type.Equals("askcard"))
         {
             content = dic["content"];
             string[] cardlist = content.Split(' ');
@@ -42,7 +42,12 @@ public class decodedic
             {
                 cards[i] = int.Parse(cardlist[i]);
             }
-        }else if (type.Equals("specialope"))
+        }
+        else if (type.Equals("askchoice"))
+        {
+            content = dic["content"];
+        }
+        else if (type.Equals("specialope"))
         {
             for(int i = 0; i < 6; i++)
             {
