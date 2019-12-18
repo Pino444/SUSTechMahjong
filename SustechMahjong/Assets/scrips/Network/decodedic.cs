@@ -14,6 +14,8 @@ public class decodedic
     public bool[] butt = new bool[7];//special op 's message
     public int[][] chipai = new int[3][];
     public string room;
+    public int chicount;
+    public bool[] whichispicked=new bool[4];
     public bool[] readystatement = new bool[4];
     // Start is called before the first frame updbuttate
     public void decodeinstruction(Dictionary<string,string> dic)
@@ -33,7 +35,7 @@ public class decodedic
         }
         
         
-        if (type.Equals("card")| type.Equals("pair")|type.Equals("initcard")|type.Equals("college")|type.Equals("askcard"))
+        if ( type.Equals("pair")|type.Equals("initcard")|type.Equals("college"))
         {
             content = dic["content"];
             string[] cardlist = content.Split(' ');
@@ -42,13 +44,39 @@ public class decodedic
             {
                 cards[i] = int.Parse(cardlist[i]);
             }
+        }else if (type.Equals("card"))
+        {
+            content = dic["content"];
+            string[] cardlist = content.Split(' ');
+            if (cardlist.Length == 2)
+            {
+                int card1 = int.Parse(cardlist[0]);
+                int cardheap = 0;
+                for (; cardheap < cards.Length; cardheap++)
+                {
+                    if (card1 == cards[cardheap])
+                    {
+                        break;
+                    }
+                }
+
+                whichispicked[cardheap / 2] = true;
+            }
+
+            cards = new int[cardlist.Length];
+            
+            for (int i = 0; i < cards.Length; i++)
+            {
+                cards[i] = int.Parse(cardlist[i]);
+            }
         }
-        else if (type.Equals("askchoice"))
+        else if (type.Equals("askchoice")|type.Equals("askcard"))
         {
             content = dic["content"];
         }
         else if (type.Equals("specialope"))
         {
+            chicount = 0;
             for(int i = 0; i < 6; i++)
             {
                 Debug.Log(sop.Length);
@@ -70,6 +98,7 @@ public class decodedic
 
                     if (i < 3)
                     {
+                        chicount++;
                         chipai[i] = cardsy;
                     }
 

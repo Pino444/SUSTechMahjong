@@ -44,8 +44,6 @@ public class RoomConcroller : MonoBehaviour
 
     public void onMentorClick()
     {
-        
-        
         networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
         {
             {"type", "supervisor"},
@@ -74,8 +72,8 @@ public class RoomConcroller : MonoBehaviour
             {"room_id",PlayerPrefs.GetString("room_id")},
             {"content",PlayerPrefs.GetString("score")}
         });
-//        chooseCourseButton.GetComponent<Button>().interactable = false;
-        chooseCourseButton.SetActive(false);
+        GameObject.Find("Slider").GetComponent<Slider>().maxValue -= int.Parse(PlayerPrefs.GetString("score"));
+        GameObject.Find("scoreButton").GetComponent<Button>().interactable = false;
     }
 
     public void onCourseConfirmButtonClick()
@@ -118,5 +116,10 @@ public class RoomConcroller : MonoBehaviour
             });
             ready = true;
         }
+    }
+
+    public void onChiButtonClick()
+    {
+        
     }
 }

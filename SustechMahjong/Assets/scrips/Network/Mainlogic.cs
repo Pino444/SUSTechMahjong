@@ -62,13 +62,6 @@ public class Mainlogic : MonoBehaviour
         networkManeger = GameObject.Find("Network");
     }
 
-    private void Update()
-    {
-    
-        
-        
-    }
-
     public void excute(Dictionary<String,String>command)
     {
         de.decodeinstruction(command);
@@ -103,6 +96,19 @@ public class Mainlogic : MonoBehaviour
                 if (de.cards.Length == 2)
                 {
                     getscorecard(de.cards, de.player);
+                    string cbtn = "courseButton";
+                    
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if (de.whichispicked[i])
+                        {
+                            int num = i + 1;
+                            string findstr = cbtn + num;
+                            Button butn = GameObject.Find(findstr).GetComponent<Button>();
+                            butn.transform.Find("Text").gameObject.SetActive(true);
+                        }
+                        
+                    }
 
                 }else if (de.cards.Length == 1)
                 {
@@ -112,6 +118,7 @@ public class Mainlogic : MonoBehaviour
             case "specialope":
                 canvas = GameObject.Find("Canvas");
                 cpgh=canvas.transform.Find("cpgh").gameObject;
+                cpgh.SetActive(true);
                 chibut=cpgh.transform.Find("chiButton").GetComponent<Button>();
                 Button peng = cpgh.transform.Find("pengButton").GetComponent<Button>();
                 Button gang = cpgh.transform.Find("gangButton").GetComponent<Button>();
@@ -160,28 +167,57 @@ public class Mainlogic : MonoBehaviour
                 
                 break;
             case "pair":
+                de.whichispicked = new bool[4];
                 canvas = GameObject.Find("Canvas");
                 canvas.transform.Find("chooseCoursePanel").gameObject.SetActive(true);
                 chosepanel = GameObject.Find("chooseCoursePanel");
+                GameObject.Find("scoreButton").GetComponent<Button>().interactable = true;
                 Button btn = GameObject.Find("courseButton1").GetComponent<Button>();
-                    btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[0] / 4];
+                btn.interactable = false;
+                btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[0] / 4];
                 btn.transform.Find("Image2").GetComponent<Image>().sprite = cardImage[de.cards[1] / 4];
+                btn.transform.Find("Text").gameObject.SetActive(false);
+                btn.GetComponent<couserController>().setTwoCard(de.cards[0],de.cards[1]);
+
                 btn = GameObject.Find("courseButton2").GetComponent<Button>();
+                btn.interactable = false;
                 btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[2] / 4];
                 btn.transform.Find("Image2").GetComponent<Image>().sprite = cardImage[de.cards[3] / 4];
+                btn.transform.Find("Text").gameObject.SetActive(false);
+                btn.GetComponent<couserController>().setTwoCard(de.cards[2], de.cards[3]);
+
                 btn = GameObject.Find("courseButton3").GetComponent<Button>();
+                btn.interactable = false;
                 btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[4] / 4];
                 btn.transform.Find("Image2").GetComponent<Image>().sprite = cardImage[de.cards[5] / 4];
+                btn.transform.Find("Text").gameObject.SetActive(false);
+                btn.GetComponent<couserController>().setTwoCard(de.cards[4], de.cards[5]);
+
                 btn = GameObject.Find("courseButton4").GetComponent<Button>();
+                btn.interactable = false;
                 btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[6] / 4];
                 btn.transform.Find("Image2").GetComponent<Image>().sprite = cardImage[de.cards[7] / 4];
-                
+                btn.transform.Find("Text").gameObject.SetActive(false);
+                btn.GetComponent<couserController>().setTwoCard(de.cards[6], de.cards[7]);
+
                 break;
             case "askchoice":
-//                if (de.content.Equals("" + de.room_id))
-//                {
-//                    
-//                }
+                if (de.content.Equals("" + de.room_id))
+                {string cbtn = "courseButton";
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if(!de.whichispicked[i])
+                        {
+                            int mun = i + 1;
+                            string findstr = cbtn + mun;
+                            Button button=GameObject.Find(findstr).GetComponent<Button>();
+                            button.interactable = true;
+                        }
+                        
+                    }
+                    
+                }
+
                 break;
             default:
                 Debug.Log("what the fuck command!?");
@@ -244,8 +280,9 @@ public class Mainlogic : MonoBehaviour
                 break;
             }
         }
+        print("cardget:"+id[0]+" "+id[1]+"pos:"+i+" "+(i+1));
         players[player].handcard[i] = new CardObject(id[0], Instantiate(cardlist[id[0] / 4], players[player].gethandposorder(i), players[player].faceRotation));
-        players[player].handcard[i+1] = new CardObject(id[1], Instantiate(cardlist[id[1] / 4], players[player].gethandposorder(i+i), players[player].faceRotation));
+        players[player].handcard[i+1] = new CardObject(id[1], Instantiate(cardlist[id[1] / 4], players[player].gethandposorder(i+1), players[player].faceRotation));
     }
 
 //打出牌
