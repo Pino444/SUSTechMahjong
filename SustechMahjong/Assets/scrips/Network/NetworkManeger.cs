@@ -45,7 +45,7 @@ public class NetworkManeger : MonoBehaviour
 //        while (true)
 //        {
             if (networkCore.msgDict.Count != 0)
-            {
+            { 
                 Debug.Log("队列长度"+networkCore.msgDict.Count);
                 Dictionary<String,String> command = networkCore.msgDict.Dequeue();
                 dic = command;

@@ -17,12 +17,20 @@ public class decodedic
     public int chicount;
     public bool[] whichispicked=new bool[4];
     public bool[] readystatement = new bool[4];
+    public int cardheapnum;
+
+    public int[] pairlist;
+
+    public string gerenscore;
+    //if end use those parameter
+    public string[] finalscore;
+    public string[] playernames;
     // Start is called before the first frame updbuttate
     public void decodeinstruction(Dictionary<string,string> dic)
     {
 
         type = dic["type"];
-        if (dic.ContainsKey("player"))
+        if (dic.ContainsKey("player") && !type.Equals("end")&&!type.Equals("hu"))
         {
             player =int.Parse( dic["player"]);
             player = (player + 4 - room_id) % 4;
@@ -33,9 +41,20 @@ public class decodedic
             room = dic["room"];
 
         }
-        
-        
-        if ( type.Equals("pair")|type.Equals("initcard")|type.Equals("college"))
+
+        if (type.Equals("pair"))
+        {
+            content = dic["content"];
+            string[] cardlist = content.Split(' ');
+            pairlist = new int[cardlist.Length];
+            cards = new int[cardlist.Length];
+            for (int i = 0; i < cards.Length; i++)
+            {
+                pairlist[i] = int.Parse(cardlist[i]);
+                cards[i] = int.Parse(cardlist[i]);
+            }
+            
+        }else if (type.Equals("initcard")|type.Equals("college"))
         {
             content = dic["content"];
             string[] cardlist = content.Split(' ');
@@ -48,19 +67,26 @@ public class decodedic
         {
             content = dic["content"];
             string[] cardlist = content.Split(' ');
+            
             if (cardlist.Length == 2)
             {
+                
                 int card1 = int.Parse(cardlist[0]);
+                Debug.Log(card1);
                 int cardheap = 0;
-                for (; cardheap < cards.Length; cardheap++)
+                for (cardheap=0; cardheap < pairlist.Length; cardheap++)
                 {
-                    if (card1 == cards[cardheap])
+                    Debug.Log(pairlist[cardheap]);
+                    if (card1 == pairlist[cardheap])
                     {
+                        Debug.Log(cardheap);
                         break;
                     }
                 }
-
+                Debug.Log(cardheap/2);
                 whichispicked[cardheap / 2] = true;
+                cardheapnum = cardheap / 2;
+
             }
 
             cards = new int[cardlist.Length];
@@ -128,11 +154,42 @@ public class decodedic
             {
                 cards[i] = int.Parse(cardlist[i]);
             }
-        }else if (type.Equals("id"))
+        }else if (type.Equals("hu"))
+        {
+            content = dic["card"];
+            string[] b = content.Split(' ');
+            cards = new int[b.Length];
+            for (int i = 0; i < b.Length; i++)
+            {
+                cards[i] = int.Parse(b[i]);
+            }
+            gerenscore = dic["score"];
+            playernames = dic["player"].Split(' ');
+            content = dic["content"];
+
+
+        }else if (type.Equals("end"))
+        {
+            finalscore = dic["score"].Split(' ');
+            playernames = dic["player"].Split(' ');
+
+            
+        }else if (type.Equals("college"))
+        {
+            content = dic["content"];
+            string[] a = content.Split(' ');
+            cards=new int[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                cards[i] = int.Parse(a[i]);
+            }
+        }       
+        else if (type.Equals("id"))
         {
             Debug.Log("your socket_id is :"+dic["content"]);
             PlayerPrefs.SetString("socket_id",dic["content"]);
-        }else if (type.Equals("roominfo"))
+        }
+        else if (type.Equals("roominfo"))
         {
             PlayerPrefs.SetString("room",dic["room"]);
             PlayerPrefs.SetString("room_id",dic["room_id"]);

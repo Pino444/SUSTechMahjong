@@ -33,9 +33,9 @@ public class cardactivity : MonoBehaviour
     }
 
 
-    public void setdapai()
+    public void setdapai(bool a)
     {
-        dapai = true;
+        dapai = a;
     }
 
     public void setcan(bool bol)
@@ -121,6 +121,7 @@ public class cardactivity : MonoBehaviour
                     });
                     dapai = false;
                     GameObject.Find("TimerImage").gameObject.SetActive(false);
+                    GameObject.Find("Network").GetComponent<Mainlogic>().setdapaifalse();
                     return _id;
                 }
             }

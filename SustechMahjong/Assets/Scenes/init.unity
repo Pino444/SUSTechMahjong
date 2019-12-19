@@ -1025,12 +1025,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8769bf20780f445e6a31f8fae351a6f3, type: 3}
   - {fileID: 21300000, guid: fb0d8e539a9ea4e2cb2adc067e8a807f, type: 3}
   - {fileID: 21300000, guid: 82ad7c9aa42da4943a3de4bb15c44587, type: 3}
-  - {fileID: 21300000, guid: 6b4f8c9d8fee046c1bc98b2e8f52ae6b, type: 3}
-  - {fileID: 21300000, guid: 4024531fe90b54215ad5ce44bc8d1b0f, type: 3}
-  - {fileID: 21300000, guid: f4bd4a92363294701af23988ddc4ca32, type: 3}
-  - {fileID: 21300000, guid: 8b90b0386d47f488c9bc8e03027c26e5, type: 3}
-  - {fileID: 21300000, guid: 399d539659974478aa084ab0a4e81192, type: 3}
-  - {fileID: 21300000, guid: acc8347c0c1374b3b915a6ae272576f8, type: 3}
+  - {fileID: 21300000, guid: 38e405c0135484eefb6ccf7d3861803d, type: 3}
+  - {fileID: 21300000, guid: eca4ba6328e5443f4b1cad8944caebe1, type: 3}
+  - {fileID: 21300000, guid: d04642246eedf46e5ac0b85a60bd603a, type: 3}
+  - {fileID: 21300000, guid: cc90bdb4828924fa1966b3bc5659670b, type: 3}
+  - {fileID: 21300000, guid: a11eefab0fd8c4c498bf27f0de7caa42, type: 3}
+  - {fileID: 21300000, guid: c4d5e58d4648043b3b8fcbe6dc16a409, type: 3}
   - {fileID: 21300000, guid: 5635b9e93cb0845e0a7e549871785c0b, type: 3}
   - {fileID: 21300000, guid: 5d45d41f8345241a187c100ba3448fc3, type: 3}
   - {fileID: 21300000, guid: 34e0559206f1f432292e6616948084d1, type: 3}
@@ -1043,6 +1043,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   cpgh: {fileID: 0}
   chibut: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &928779229
 GameObject:
   m_ObjectHideFlags: 0

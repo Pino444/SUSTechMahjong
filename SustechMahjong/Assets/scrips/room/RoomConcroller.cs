@@ -120,6 +120,49 @@ public class RoomConcroller : MonoBehaviour
 
     public void onChiButtonClick()
     {
-        
+        Mainlogic ml= networkManeger.GetComponent<Mainlogic>();
+        decodedic dedic = ml.de;
+        if (dedic.chicount == 1)
+        {
+            GameObject.Find("Network").GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "opereply"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","1"}
+        });
+            GameObject.Find("cpgh").gameObject.SetActive(false);
+        }
+        else
+        {
+            GameObject.Find("cpgh").gameObject.SetActive(false);
+            GameObject.Find("Canvas").transform.Find("mutilChiPanel").gameObject.SetActive(true);
+            string chibtnname = "chiButton";
+            for (int i = 0; i < 3; i++)
+            {
+                int realnum = i + 1;
+                Button chibtn = GameObject.Find(chibtnname + realnum).GetComponent<Button>();
+                chibtn.interactable = dedic.butt[i];
+                if (dedic.butt[i])
+                {
+                    chibtn.transform.Find("Image1").GetComponent<Image>().sprite = ml.cardImage[dedic.chipai[i][0] / 4];
+                    chibtn.transform.Find("Image2").GetComponent<Image>().sprite = ml.cardImage[dedic.chipai[i][1] / 4];
+                    chibtn.transform.Find("Image3").GetComponent<Image>().sprite = ml.cardImage[dedic.chipai[i][2] / 4];
+                }
+            }
+        }
+    }
+
+    public void onCloseButtonWinPanelClick()
+    {
+        GameObject winpanel = GameObject.Find("winPanel");
+        winpanel.SetActive(false);
+    }
+    
+    public void onCloseButtonHuPanelClick()
+    {
+        GameObject hupanel = GameObject.Find("huPanel");
+        hupanel.SetActive(false);
     }
 }

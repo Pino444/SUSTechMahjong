@@ -44,7 +44,8 @@ public class Mainlogic : MonoBehaviour
     //CardObject[] handcard = new CardObject[13];
     CardObject nowcard;
     playersetting[] players = { new Thisplayer(), new Nextplayer(), new Antiplayer(), new Frontplayer() };
-    decodedic de = new decodedic();
+    
+    public decodedic de; 
     public GameObject name1;
     public GameObject name2;
     public GameObject name3;
@@ -55,11 +56,12 @@ public class Mainlogic : MonoBehaviour
     public GameObject canvas;
     public GameObject cpgh;
     public Button chibut;
-
+    public Animator anim;
     private void Awake()
     {
         Debug.Log("awake run");
         networkManeger = GameObject.Find("Network");
+        de= new decodedic();
     }
 
     public void excute(Dictionary<String,String>command)
@@ -87,31 +89,48 @@ public class Mainlogic : MonoBehaviour
                     Image timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
                     timei.gameObject.SetActive(true);
                     timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(1);
-                    nowcard.card.GetComponent<cardactivity>().setcan(true);
+                    if (nowcard != null)
+                    {
+                        nowcard.card.GetComponent<cardactivity>().setcan(true);
+                    }
+                    
                 }
                 
                 
                 break;
-            case "card"://服务器给你传谁打了什么牌
+            case "college":
+                int coll1 = de.cards[0]+26;
+                int coll2 = de.cards[1]+26;
+                canvas = GameObject.Find("Canvas");
+                canvas.transform.Find("disappearCollege1").gameObject.SetActive(true);
+                canvas.transform.Find("disappearCollege2").gameObject.SetActive(true);
+                canvas.transform.Find("disappearCollege1").GetComponent<Image>().sprite = cardImage[coll1];
+                canvas.transform.Find("disappearCollege2").GetComponent<Image>().sprite = cardImage[coll2];
+                
+                break;
+            case "card"://服务器给你传谁拿了什么牌
                 if (de.cards.Length == 2)
                 {
-                    getscorecard(de.cards, de.player);
                     string cbtn = "courseButton";
-                    
                     for (int i = 0; i < 4; i++)
                     {
-                        if (de.whichispicked[i])
+                        if (de.cardheapnum==i)
                         {
                             int num = i + 1;
+                            int[] scorecard = {de.pairlist[i * 2], de.pairlist[i * 2 + 1]};
+                            getscorecard(scorecard, de.player);
                             string findstr = cbtn + num;
-                            Button butn = GameObject.Find(findstr).GetComponent<Button>();
+                            canvas = GameObject.Find("Canvas");
+                            Button butn = canvas.transform.Find("chooseCoursePanel").transform.Find(findstr).GetComponent<Button>();
                             butn.transform.Find("Text").gameObject.SetActive(true);
+
                         }
                         
                     }
 
                 }else if (de.cards.Length == 1)
                 {
+                    
                     getcard(de.cards[0], de.player);
                 }
                 break;
@@ -120,18 +139,36 @@ public class Mainlogic : MonoBehaviour
                 cpgh=canvas.transform.Find("cpgh").gameObject;
                 cpgh.SetActive(true);
                 chibut=cpgh.transform.Find("chiButton").GetComponent<Button>();
-                Button peng = cpgh.transform.Find("pengButton").GetComponent<Button>();
-                Button gang = cpgh.transform.Find("gangButton").GetComponent<Button>();
-                Button hu = cpgh.transform.Find("huButton").GetComponent<Button>();
-                Button cancel = cpgh.transform.Find("cancelButton").GetComponent<Button>();
+                Button peng = cpgh.transform.Find("pengButton4").GetComponent<Button>();
+                Button gang = cpgh.transform.Find("gangButton5").GetComponent<Button>();
+                Button hu = cpgh.transform.Find("huButton6").GetComponent<Button>();
+                Button cancel = cpgh.transform.Find("cancelButton0").GetComponent<Button>();
                 chibut.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]);
                 peng.gameObject.SetActive(de.butt[3]);
                 gang.gameObject.SetActive(de.butt[4]);
                 hu.gameObject.SetActive(de.butt[5]);
-                cancel.gameObject.SetActive(true);
+                cancel.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
+                if (!(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]))
+                {
+                    GameObject.Find("Network").GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+                    {
+                        {"type", "opereply"},
+                        {"socket_id", PlayerPrefs.GetString("socket_id")},
+                        {"room",PlayerPrefs.GetString("room")},
+                        {"room_id",PlayerPrefs.GetString("room_id")},
+                        {"content","0"}
+                    });
+                }
                 
                 break;
             case "play":
+                if (de.player == 0)
+                {
+                    anim = GameObject.Find("Hand").GetComponent<Animator>();
+                    anim.SetTrigger("takeTrigger");
+                    StartCoroutine(delayPlayCard());
+                    break;
+                }
                 dropcard(de.cards[0], de.player);
                 
                 break;
@@ -163,6 +200,57 @@ public class Mainlogic : MonoBehaviour
                 roomText.GetComponent<Text>().text = de.room;
                 
                 break;
+            case "end":
+                canvas = GameObject.Find("Canvas");
+                canvas.transform.Find("winPanel").gameObject.SetActive(true);
+                Image wp = canvas.transform.Find("winPanel").GetComponent<Image>();
+                string endname = "UserImage";
+                string endscore = "scoreImage";
+                for (int i = 1; i <= 4; i++)
+                {
+                    print(endname + i);
+                    Image imge = wp.transform.Find(endname + i).GetComponent<Image>();
+                    imge.transform.Find("Text").GetComponent<Text>().text = de.playernames[i - 1];
+                    imge = wp.transform.Find(endscore + i).GetComponent<Image>();
+                    imge.transform.Find("Text").GetComponent<Text>().text = de.finalscore[i - 1];
+                }
+
+                break;
+            case "hu":
+                canvas = GameObject.Find("Canvas");
+                Image hpl = canvas.transform.Find("huPanel").GetComponent<Image>();
+                hpl.gameObject.SetActive(true);
+                Image img = hpl.transform.Find("leftImage").GetComponent<Image>();
+                img.transform.Find("nameText").GetComponent<Text>().text = de.playernames[0];
+                img.transform.Find("scoreText").GetComponent<Text>().text = de.gerenscore;
+                string[] cardtype = de.content.Split(' ');
+                img = hpl.transform.Find("baseImage").GetComponent<Image>();
+                string ppp = "Image";
+                for (int i = 0; i < de.cards.Length; i++)
+                {
+                    img.transform.Find(ppp + (i + 1)).GetComponent<Image>().sprite = cardImage[de.cards[i] / 4];
+                }
+                ppp = "";
+                string right = "";
+                for (int i = 0; i < cardtype.Length; i++)
+                {
+                    if (i < 5)
+                    {
+                        ppp += cardtype[i];
+                        ppp+= "\n";
+                    }
+                    else
+                    {
+                        right += cardtype[i];
+                        right += "\n";
+                    }
+                }
+                hpl.transform.Find("huText").GetComponent<Text>().text = ppp;
+                hpl.transform.Find("huText2").GetComponent<Text>().text = right;
+
+
+                break;
+
             case "id":
                 
                 break;
@@ -170,6 +258,7 @@ public class Mainlogic : MonoBehaviour
                 de.whichispicked = new bool[4];
                 canvas = GameObject.Find("Canvas");
                 canvas.transform.Find("chooseCoursePanel").gameObject.SetActive(true);
+                GameObject.Find("chooseCoursePanel").transform.Find("remindText").gameObject.SetActive(false);
                 chosepanel = GameObject.Find("chooseCoursePanel");
                 GameObject.Find("scoreButton").GetComponent<Button>().interactable = true;
                 Button btn = GameObject.Find("courseButton1").GetComponent<Button>();
@@ -177,6 +266,7 @@ public class Mainlogic : MonoBehaviour
                 btn.transform.Find("Image1").GetComponent<Image>().sprite = cardImage[de.cards[0] / 4];
                 btn.transform.Find("Image2").GetComponent<Image>().sprite = cardImage[de.cards[1] / 4];
                 btn.transform.Find("Text").gameObject.SetActive(false);
+    
                 btn.GetComponent<couserController>().setTwoCard(de.cards[0],de.cards[1]);
 
                 btn = GameObject.Find("courseButton2").GetComponent<Button>();
@@ -204,6 +294,7 @@ public class Mainlogic : MonoBehaviour
             case "askchoice":
                 if (de.content.Equals("" + de.room_id))
                 {string cbtn = "courseButton";
+                    GameObject.Find("chooseCoursePanel").transform.Find("remindText").gameObject.SetActive(true);
                     for (int i = 0; i < 4; i++)
                     {
                         if(!de.whichispicked[i])
@@ -225,6 +316,11 @@ public class Mainlogic : MonoBehaviour
         }
     }
     
+    IEnumerator delayPlayCard()
+    {
+        yield return new WaitForSeconds(0.5f);
+        dropcard(de.cards[0], de.player);
+    }
     void givecard(int[] id,int player)//发牌到玩家
     {
 
@@ -232,6 +328,7 @@ public class Mainlogic : MonoBehaviour
         {
             players[player].handcard[i] = new CardObject(id[i], Instantiate(cardlist[id[i] / 4],players[player].gethandposorder(i), players[player].faceRotation));
         }
+        showcard(player);
     }
 
     void setcardstatement()
@@ -254,12 +351,29 @@ public class Mainlogic : MonoBehaviour
             {
                 break;
             }
-            c.card.GetComponent<cardactivity>().setdapai();
+            c.card.GetComponent<cardactivity>().setdapai(true);
 
         }
         if (nowcard!=null &&nowcard.card.transform.localPosition == players[0].getpos)
         {
-            nowcard.card.GetComponent<cardactivity>().setdapai();
+            nowcard.card.GetComponent<cardactivity>().setdapai(true);
+        }
+    }
+
+    public void setdapaifalse()
+    {
+        foreach (CardObject c in players[0].handcard)
+        {
+            if (c == null)
+            {
+                break;
+            }
+            c.card.GetComponent<cardactivity>().setdapai(false);
+
+        }
+        if (nowcard!=null &&nowcard.card.transform.localPosition == players[0].getpos)
+        {
+            nowcard.card.GetComponent<cardactivity>().setdapai(false);
         }
     }
 //摸牌
@@ -267,7 +381,7 @@ public class Mainlogic : MonoBehaviour
     {
         nowcard = new CardObject(id, Instantiate(cardlist[id / 4], players[player].getgetpos(), players[player].faceRotation) );
         nowcard.card.GetComponent<cardactivity>().setcan(true);
-        nowcard.card.GetComponent<cardactivity>().setdapai();
+        
     }
 
     void getscorecard(int[] id,int player)
@@ -283,6 +397,9 @@ public class Mainlogic : MonoBehaviour
         print("cardget:"+id[0]+" "+id[1]+"pos:"+i+" "+(i+1));
         players[player].handcard[i] = new CardObject(id[0], Instantiate(cardlist[id[0] / 4], players[player].gethandposorder(i), players[player].faceRotation));
         players[player].handcard[i+1] = new CardObject(id[1], Instantiate(cardlist[id[1] / 4], players[player].gethandposorder(i+1), players[player].faceRotation));
+        setcardstatement();
+        
+
     }
 
 //打出牌
@@ -325,33 +442,6 @@ public class Mainlogic : MonoBehaviour
             }
         }
         showcard(player);
-    }
-
-    public int LeftClick(int player)
-    {
-        if (Input.GetMouseButtonUp(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 10))
-            {
-                GameObject go = hit.collider.gameObject;
-                foreach (CardObject c in players[player].handcard)
-                {
-                    if (c.card == go)
-                    {
-                        
-                        return c.id;
-                    }
-                }
-            }
-            else
-            {
-                return nowcard.id;
-            }
-
-        }
-        return -1;
     }
 
     int gethandpos(int id,int player)
