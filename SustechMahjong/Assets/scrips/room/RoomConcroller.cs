@@ -122,6 +122,14 @@ public class RoomConcroller : MonoBehaviour
     {
         Mainlogic ml= networkManeger.GetComponent<Mainlogic>();
         decodedic dedic = ml.de;
+        int g = 1;
+        for (int i = 0; i < 3; i++)
+        {
+            if (dedic.butt[i])
+            {
+                g = i + 1;
+            }
+        }
         if (dedic.chicount == 1)
         {
             GameObject.Find("Network").GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
@@ -130,7 +138,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
-            {"content","1"}
+            {"content",""+g}
         });
             GameObject.Find("cpgh").gameObject.SetActive(false);
         }

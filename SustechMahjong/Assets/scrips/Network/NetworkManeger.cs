@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class NetworkManeger : MonoBehaviour
 {
+//    private Thread _thread;
     NetworkCore networkCore;
-//    Mainlogic _mainlogic = new Mainlogic();
     public static NetworkManeger instance;
 
     public Dictionary<String, String> dic;
@@ -27,6 +28,9 @@ public class NetworkManeger : MonoBehaviour
     void Start () {
         networkCore = GetComponent<NetworkCore>();
         networkCore.SetupConnection();
+//        _thread = new Thread(startRecive);
+//        _thread.IsBackground = true;
+//        _thread.Start();
     }
 
     // Update is called once per frame
@@ -50,7 +54,6 @@ public class NetworkManeger : MonoBehaviour
                 Dictionary<String,String> command = networkCore.msgDict.Dequeue();
                 dic = command;
                 gameObject.GetComponent<Mainlogic>().excute(command);
-//                _mainlogic.excute(command);
             }
 //        }
     }
