@@ -22,6 +22,7 @@ public class gameController : MonoBehaviour
     private GameObject occupy = null;
     public void onSettingButtonClick()
     {
+        GameObject.Find("settingButton").GetComponent<AudioSource>().Play();
         if (occupy == null)
         {
             iTween.MoveTo(setting,new Vector3(200,288,0), 1f);
@@ -42,6 +43,7 @@ public class gameController : MonoBehaviour
 
     public void onIntroButtonClick()
     {
+        GameObject.Find("introductionButton").GetComponent<AudioSource>().Play();
         if (occupy == null)
         {
             iTween.MoveTo(introText,new Vector3(200,288,0), 1f);
@@ -67,6 +69,7 @@ public class gameController : MonoBehaviour
 
     public void onCreateRoomButtonClick()
     {
+        GameObject.Find("buildRoomButton").GetComponent<AudioSource>().Play();
         networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
         {
             {"type", "create"},
@@ -79,6 +82,7 @@ public class gameController : MonoBehaviour
     public void onJoinRoomButtonClick()
     {
         joinRoomPanel.SetActive(true);
+        GameObject.Find("joinRoomButton ").GetComponent<AudioSource>().Play();
     }
 
     public void onCloseJoinRoomButtonClick()
@@ -88,6 +92,7 @@ public class gameController : MonoBehaviour
 
     public void onQuitGameButtonClick()
     {
+        GameObject.Find("exitButton").GetComponent<AudioSource>().Play();
         quitGamePanel.SetActive(true);
     }
 

@@ -22,11 +22,7 @@ public class CardObject
         this.id = 0;
         this.card = null;
     }
-    public void moveTo(Vector3 position)
-    {
-        this.card.transform.localPosition=position;
-    }
-    
+
 }
 
 
@@ -57,6 +53,8 @@ public class Mainlogic : MonoBehaviour
     public GameObject cpgh;
     public Button chibut;
     public Animator anim;
+
+    GameObject eswn;
     private void Awake()
     {
         Debug.Log("awake run");
@@ -176,6 +174,7 @@ public class Mainlogic : MonoBehaviour
                 outcard(de.cards, de.player);
                 break;
             case "roominfo":
+                ESWN(de.room_id);
                 print("roominfo come!");
                 foreach (var VARIABLE in de.names)
                 {
@@ -480,8 +479,9 @@ public class Mainlogic : MonoBehaviour
             if (conb == null)
             {
                 break;
-            }
-            conb.card.transform.localPosition = players[player].gethandposorder(i);
+            } 
+            Vector3 v3=players[player].gethandposorder(i);
+            conb.card.transform.localPosition = v3;
             i++;
             conb.card.transform.localRotation = players[player].faceRotation;
         }
@@ -521,5 +521,26 @@ public class Mainlogic : MonoBehaviour
             }
         }
     }
-       
+
+    void ESWN(int room_id)
+    {
+        eswn=GameObject.Find("DemoScene").transform.Find("MahJongDesk").transform.Find("ESWN").gameObject;
+        switch (room_id)
+        {
+            case 1:
+                eswn.transform.localRotation=new Quaternion(0,0.7f,0,0.7f);
+                break;
+            case 2:
+                eswn.transform.localRotation=new Quaternion(0,1,0,0);
+                break;
+            case 3:
+                eswn.transform.localRotation=new Quaternion(0,-0.7f,0,-0.7f);
+                break;
+            case 4:
+                eswn.transform.localRotation=new Quaternion(0,0,0,0);
+                break;
+                
+        }
+    }
+    
 }

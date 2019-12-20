@@ -120,8 +120,9 @@ public class cardactivity : MonoBehaviour
                         {"content",""+_id}
                     });
                     dapai = false;
-                    GameObject.Find("TimerImage").gameObject.SetActive(false);
                     GameObject.Find("Network").GetComponent<Mainlogic>().setdapaifalse();
+                    GameObject.Find("TimerImage").gameObject.SetActive(false);
+                    
                     return _id;
                 }
             }

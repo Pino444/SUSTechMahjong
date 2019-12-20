@@ -2,48 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shude.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shude.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shuli.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shuli.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shuren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/shuren.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhicheng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhicheng.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhiren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhiren.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/书院/zhixin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/anniu.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/anniu.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/chi.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/chi.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/paizhuangji.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/paizhuangji.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/单击用户界面.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/单击用户界面.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/岗.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/岗.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/彭.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/彭.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/给.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/给.ogg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/init.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/init.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Animations/Hand Controller 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Animations/Hand Controller 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/card/change.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/card/change.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shiren-College-Logo2-e1571645456508.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shiren-College-Logo2-e1571645456508.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shude-College-Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shude-College-Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shuli-College-Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Shuli-College-Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhicheng-College-Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhicheng-College-Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhiren-College-logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhiren-College-logo.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhixin-College-Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/cardImage/书院/Zhixin-College-Logo.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -82,10 +83,8 @@
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/teller.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/test.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/cardacitivity.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" />
@@ -95,8 +94,10 @@
         <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +179,9 @@
       <workItem from="1576500323900" duration="3365000" />
       <workItem from="1576589929795" duration="5611000" />
       <workItem from="1576676613698" duration="4687000" />
-      <workItem from="1576760860144" duration="8416000" />
+      <workItem from="1576760860144" duration="8567000" />
+      <workItem from="1576826825677" duration="1273000" />
+      <workItem from="1576849729863" duration="1785000" />
     </task>
     <servers />
   </component>

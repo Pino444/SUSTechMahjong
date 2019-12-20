@@ -21,6 +21,8 @@ public class GameConcroller : MonoBehaviour
     {
         //判断昵称后跳转到大厅
         String nickName = this.nickName.text;
+        
+        GameObject.Find("setNameButton").GetComponent<AudioSource>().Play();
         if (nickName == "")
         {
             //昵称是空的，提示用户
