@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/anniu.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/anniu.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/chi.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/chi.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/paizhuangji.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/paizhuangji.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/单击用户界面.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/单击用户界面.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/岗.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/岗.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/彭.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/彭.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/给.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/给.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/ip/ipContorller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scrips/ip/ipContorller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/init.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/init.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +37,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/hall.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/6e/023e7967/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A875D0F2-A5C4-4098-A5BC-22B856177090/d6/cd85e047/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/hall/getName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/玩家信息/base_name.png.meta" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +52,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/spButtonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/room1.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/ip/ipContorller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,7 +69,6 @@
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/networkManeger.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/teller.cs" />
         <option value="$PROJECT_DIR$/Assets/test.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/getRoomNumber.cs" />
@@ -96,8 +83,10 @@
         <option value="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/init/GameConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/ip/ipContorller.cs" />
       </list>
     </option>
   </component>
@@ -182,6 +171,7 @@
       <workItem from="1576760860144" duration="8567000" />
       <workItem from="1576826825677" duration="1273000" />
       <workItem from="1576849729863" duration="1785000" />
+      <workItem from="1576853131784" duration="937000" />
     </task>
     <servers />
   </component>

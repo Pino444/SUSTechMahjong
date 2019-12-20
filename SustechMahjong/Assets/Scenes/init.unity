@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5b56e4772264c84b90b870f7e842fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverAddress: 10.21.41.131
+  serverAddress: 
   serverPort: 5555
 --- !u!114 &858297346
 MonoBehaviour:

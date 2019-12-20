@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 using Tiny;
-public class NetworkCore : MonoBehaviour {
+public class NetworkCore : MonoBehaviour
+{
     public string serverAddress;
     public int serverPort;
     
@@ -16,6 +17,11 @@ public class NetworkCore : MonoBehaviour {
     private string receiveMsg = "";
     private bool isConnected = false;
     public Queue<Dictionary<String,String>> msgDict = new Queue<Dictionary<String,String>>();
+
+    private void Awake()
+    {
+        serverAddress = PlayerPrefs.GetString("ip");
+    }
 
     public void OnApplicationQuit() {
         Dictionary<string, string> dict = new Dictionary<string, string>()

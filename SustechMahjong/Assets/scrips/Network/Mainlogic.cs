@@ -163,7 +163,7 @@ public class Mainlogic : MonoBehaviour
                 if (de.player == 0)
                 {
                     anim = GameObject.Find("Hand").GetComponent<Animator>();
-                    anim.SetTrigger("takeTrigger");
+                    anim.SetTrigger(name: $"takeTrigger");
                     StartCoroutine(delayPlayCard());
                     break;
                 }
@@ -317,7 +317,7 @@ public class Mainlogic : MonoBehaviour
     
     IEnumerator delayPlayCard()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         dropcard(de.cards[0], de.player);
     }
     void givecard(int[] id,int player)//发牌到玩家
