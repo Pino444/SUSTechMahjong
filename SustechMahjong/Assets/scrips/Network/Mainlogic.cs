@@ -156,6 +156,7 @@ public class Mainlogic : MonoBehaviour
                 cancel.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
                 if (!(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]))
                 {
+                    System.Threading.Thread.Sleep(500);
                     GameObject.Find("Network").GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
                     {
                         {"type", "opereply"},
@@ -172,8 +173,8 @@ public class Mainlogic : MonoBehaviour
                 {
                     anim = GameObject.Find("Hand1").GetComponent<Animator>();
                     anim.SetTrigger(name: "takeTrigger");
-                    StartCoroutine(delayPlayCard());
-                    break;
+                    //StartCoroutine(delayPlayCard());
+                   //break;
                 }
                 dropcard(de.cards[0], de.player);
                 
@@ -444,6 +445,7 @@ public class Mainlogic : MonoBehaviour
 //吃碰杠
     void outcard(int[] ids,int player)
     {
+        Debug.Log(player);
         for (int i = 0; i < ids.Length; i++)
         {
             int handpos = gethandpos(ids[i],player);
@@ -451,6 +453,7 @@ public class Mainlogic : MonoBehaviour
             {
                 CardObject drp = players[player].handcard[handpos];
                 drp.card.transform.localPosition = players[player].getoutpos();
+                Debug.Log(players[player].outzone);
                 drp.card.transform.localRotation = players[player].deskRotation;
                 drp.card.GetComponent<cardactivity>().setcan(false);
                 players[player].handcard[handpos] = null;
@@ -461,6 +464,7 @@ public class Mainlogic : MonoBehaviour
                 nowcard.card.transform.localPosition = players[player].getoutpos();
                 nowcard.card.transform.localRotation= players[player].deskRotation;
                 nowcard.card.GetComponent<cardactivity>().setcan(false);
+                Debug.Log(players[player].outzone);
                 players[player].lastdrop();
             }
         }
