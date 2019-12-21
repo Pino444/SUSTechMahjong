@@ -534,7 +534,7 @@ public class Mainlogic : MonoBehaviour
                 eswn.transform.localRotation=new Quaternion(0,1,0,0);
                 break;
             case 3:
-                eswn.transform.localRotation=new Quaternion(0,-0.7f,0,-0.7f);
+                eswn.transform.localRotation=new Quaternion(0,-0.7f,0,0.7f);
                 break;
             case 4:
                 eswn.transform.localRotation=new Quaternion(0,0,0,0);
