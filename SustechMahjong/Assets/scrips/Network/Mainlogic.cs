@@ -162,8 +162,8 @@ public class Mainlogic : MonoBehaviour
             case "play":
                 if (de.player == 0)
                 {
-//                    anim = GameObject.Find("Hand").GetComponent<Animator>();
-//                    anim.SetTrigger(name: $"takeTrigger");
+                    anim = GameObject.Find("Hand1").GetComponent<Animator>();
+                    anim.SetTrigger(name: "takeTrigger");
                     StartCoroutine(delayPlayCard());
                     break;
                 }
