@@ -30,6 +30,7 @@ public class cardactivity : MonoBehaviour
             }
             
         }
+        
     }
 
 
@@ -56,7 +57,7 @@ public class cardactivity : MonoBehaviour
     private void OnEnter()
     {
 
-       
+        self = gameObject.transform.localPosition;
         Vector3 v3 = self;
         v3.y += 0.005f;
         v3.z -= 0.01f;

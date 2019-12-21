@@ -145,7 +145,12 @@ public class decodedic
             }
             
 
-        }else if (type.Equals("cpg")|type.Equals("play"))
+        }else if(type.Equals("play"))
+        {
+            content = dic["card"];
+            cards[0] = int.Parse(content);
+        }
+        else if (type.Equals("cpg"))
         {
             content = dic["card"];
             string[] cardlist = content.Split(' ');

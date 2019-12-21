@@ -18,6 +18,11 @@ public class Timer : MonoBehaviour
         _text = timerText.GetComponent<Text>();
         Times = 10;
     }
+    void OnEnable()
+    {
+        Times = 10;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -39,4 +44,5 @@ public class Timer : MonoBehaviour
     {
         return statement;
     }
+
 }

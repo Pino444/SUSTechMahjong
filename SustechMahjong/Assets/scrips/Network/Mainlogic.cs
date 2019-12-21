@@ -64,10 +64,17 @@ public class Mainlogic : MonoBehaviour
 
     public void excute(Dictionary<String,String>command)
     {
+        if (nowcard != null)
+        {
+            Debug.Log(nowcard.id);
+            Debug.Log(nowcard.card);
+
+        }
+        
         de.decodeinstruction(command);
         switch (de.type){
             case "initcard":
-                GameObject.Find("readyButton").SetActive(false);
+                GameObject.Find("Canvas").transform.Find("readyButton").gameObject.SetActive(false);
                 for (int i = 1; i <= 4; i++)
                 {
                     int pl = (i + 4 - de.room_id) % 4;
@@ -125,6 +132,7 @@ public class Mainlogic : MonoBehaviour
                         }
                         
                     }
+                    showcard(de.player);
 
                 }else if (de.cards.Length == 1)
                 {
@@ -314,6 +322,21 @@ public class Mainlogic : MonoBehaviour
                 break;
         }
     }
+
+    void printsomething()
+    {
+        print("operation player:" + de.player);
+        string a = "";
+        foreach (CardObject co in players[0].handcard)
+        {
+            if (co == null)
+            {
+                break;
+            }
+            a += (" "+co.id+",");
+        }
+        print(a);
+    }
     
     IEnumerator delayPlayCard()
     {
@@ -397,13 +420,14 @@ public class Mainlogic : MonoBehaviour
         players[player].handcard[i] = new CardObject(id[0], Instantiate(cardlist[id[0] / 4], players[player].gethandposorder(i), players[player].faceRotation));
         players[player].handcard[i+1] = new CardObject(id[1], Instantiate(cardlist[id[1] / 4], players[player].gethandposorder(i+1), players[player].faceRotation));
         setcardstatement();
-        
+        showcard(player);
 
     }
 
 //打出牌
     void dropcard(int id,int player)
     {
+        Debug.Log(id);
         int handpos = gethandpos(id,player);
         if(handpos>=0)
         {
@@ -472,6 +496,7 @@ public class Mainlogic : MonoBehaviour
 
     void showcard(int player)//重新排序
     {
+        printsomething();
         reordercard(player);
         int i = 0;
         foreach (CardObject conb in players[player].handcard)
