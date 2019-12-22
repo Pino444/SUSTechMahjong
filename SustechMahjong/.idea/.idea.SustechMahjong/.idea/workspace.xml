@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,8 +79,8 @@
         <option value="$PROJECT_DIR$/Assets/scrips/ip/ipContorller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/NetworkManeger.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
       </list>
     </option>
   </component>
@@ -169,6 +168,7 @@
       <workItem from="1576853131784" duration="3115000" />
       <workItem from="1576915696187" duration="760000" />
       <workItem from="1576934996954" duration="177000" />
+      <workItem from="1577021623420" duration="2203000" />
     </task>
     <servers />
   </component>
