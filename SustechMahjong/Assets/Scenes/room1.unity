@@ -3843,6 +3843,7 @@ GameObject:
   - component: {fileID: 414348079}
   - component: {fileID: 414348078}
   - component: {fileID: 414348077}
+  - component: {fileID: 414348080}
   m_Layer: 5
   m_Name: chiButton2
   m_TagString: Untagged
@@ -3951,6 +3952,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414348075}
   m_CullTransparentMesh: 0
+--- !u!114 &414348080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414348075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427089919902343ad865996f8f3e8e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &422536157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8905,6 +8918,7 @@ MonoBehaviour:
   Times: 10
   timerText: {fileID: 944151514}
   timer: {fileID: 1755305215}
+  networkManeger: {fileID: 0}
 --- !u!114 &944151517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15217,6 +15231,7 @@ GameObject:
   - component: {fileID: 1530862423}
   - component: {fileID: 1530862422}
   - component: {fileID: 1530862421}
+  - component: {fileID: 1530862424}
   m_Layer: 5
   m_Name: chiButton3
   m_TagString: Untagged
@@ -15325,6 +15340,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530862419}
   m_CullTransparentMesh: 0
+--- !u!114 &1530862424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530862419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427089919902343ad865996f8f3e8e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1534575388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4364859646961358, guid: d319beab9a47df84c99ef2de5f181df6,
@@ -19201,6 +19228,7 @@ GameObject:
   - component: {fileID: 1900525197}
   - component: {fileID: 1900525196}
   - component: {fileID: 1900525195}
+  - component: {fileID: 1900525198}
   m_Layer: 5
   m_Name: chiButton1
   m_TagString: Untagged
@@ -19309,6 +19337,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900525193}
   m_CullTransparentMesh: 0
+--- !u!114 &1900525198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900525193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427089919902343ad865996f8f3e8e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1917332570
 PrefabInstance:
   m_ObjectHideFlags: 0
