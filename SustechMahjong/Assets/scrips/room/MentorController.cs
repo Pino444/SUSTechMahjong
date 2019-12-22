@@ -30,6 +30,8 @@ public class MentorController : MonoBehaviour,IPointerEnterHandler,IPointerExitH
                 {"content",mentornumber}
             });
             gameObject.transform.parent.gameObject.SetActive(false);
+            GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
+
         }
 
         

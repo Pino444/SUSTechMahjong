@@ -74,6 +74,7 @@ public class RoomConcroller : MonoBehaviour
         });
         GameObject.Find("Slider").GetComponent<Slider>().maxValue -= int.Parse(PlayerPrefs.GetString("score"));
         GameObject.Find("scoreButton").GetComponent<Button>().interactable = false;
+        GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
     }
 
     public void onCourseConfirmButtonClick()
@@ -141,6 +142,7 @@ public class RoomConcroller : MonoBehaviour
             {"content",""+g}
         });
             GameObject.Find("cpgh").gameObject.SetActive(false);
+            GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
         }
         else
         {

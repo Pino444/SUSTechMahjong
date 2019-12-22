@@ -27,7 +27,7 @@ public class couserController : MonoBehaviour,IPointerClickHandler
                 {"content",courenumber}
             });
             gameObject.transform.parent.gameObject.SetActive(false);
-
+            GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
         }
         
 

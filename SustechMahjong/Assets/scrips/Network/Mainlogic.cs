@@ -424,7 +424,11 @@ public class Mainlogic : MonoBehaviour
     void getcard(int id,int player)
     {
         nowcard = new CardObject(id, Instantiate(cardlist[id / 4], players[player].getgetpos(), players[player].faceRotation) );
-        nowcard.card.GetComponent<cardactivity>().setcan(true);
+        if (de.player == 0)
+        {
+            nowcard.card.GetComponent<cardactivity>().setcan(true);
+        }
+        
         
     }
 

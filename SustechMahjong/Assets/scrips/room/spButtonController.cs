@@ -17,5 +17,6 @@ public class spButtonController : MonoBehaviour,IPointerClickHandler
             {"content",mentornumber}
         });
         gameObject.transform.parent.gameObject.SetActive(false);
+        GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
     }
 }
