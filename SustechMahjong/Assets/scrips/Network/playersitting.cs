@@ -190,7 +190,7 @@ class Antiplayer : playersetting
         if (dropzone.x < -0.06)
         {
             dropzone.x = 0.06f;
-            dropzone.z -= 0.034f;
+            dropzone.z += 0.034f;
         }
         
     }
@@ -201,7 +201,7 @@ class Antiplayer : playersetting
         if (dropzone.x > 0.06)
         {
             dropzone.x = -0.06f;
-            dropzone.z += 0.034f;
+            dropzone.z -= 0.034f;
         }
     }
 }
@@ -244,7 +244,7 @@ class Thisplayer : playersetting
         return result;
     }
 
-    public override void lastdrop()
+    public override void nextdrop()
     {
         dropzone.x -= 0.024f;
         if (dropzone.x < -0.06)
@@ -254,7 +254,7 @@ class Thisplayer : playersetting
         }
     }
 
-    public override void nextdrop()
+    public override void lastdrop()
     {
         dropzone.x += 0.024f;
         if (dropzone.x > 0.06)
