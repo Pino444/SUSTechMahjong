@@ -44,6 +44,7 @@ public class Timer : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","-1"}
                     });
+                    statement = -1;
                     break;
                 case 2://TODO
                     networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
@@ -55,6 +56,7 @@ public class Timer : MonoBehaviour
                         {"content","1"}
                         
                     });
+                    statement = -1;
                     break;
                 case 3:
                     networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
@@ -65,6 +67,7 @@ public class Timer : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","1"}
                     });
+                    statement = -1;
                     break;
                 case 4:
                     networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
@@ -75,6 +78,7 @@ public class Timer : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","0"}
                     });
+                    statement = -1;
                     break;
                 case 5://TODO
 //                    networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
@@ -84,6 +88,7 @@ public class Timer : MonoBehaviour
 //                        {"room",PlayerPrefs.GetString("room")},
 //                        {"room_id",PlayerPrefs.GetString("room_id")}
 //                    });
+                    statement = -1;
                     break;
                 default:
                     Debug.Log("No such Statement!");

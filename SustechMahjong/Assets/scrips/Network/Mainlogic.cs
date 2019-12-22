@@ -53,6 +53,7 @@ public class Mainlogic : MonoBehaviour
     public GameObject cpgh;
     public Button chibut;
     public Animator anim;
+    Image timei;
 
     GameObject eswn;
     private void Awake()
@@ -66,6 +67,7 @@ public class Mainlogic : MonoBehaviour
     {
         if (nowcard != null)
         {
+            Debug.Log("nowcard:");
             Debug.Log(nowcard.id);
             Debug.Log(nowcard.card);
 
@@ -85,13 +87,16 @@ public class Mainlogic : MonoBehaviour
                 setcardstatement();
                 canvas = GameObject.Find("Canvas");
                 canvas.transform.Find("chooseMentorPanel").gameObject.SetActive(true);
+                timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
+                timei.gameObject.SetActive(true);
+                timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(2);
                 break;
             case "askcard"://服务器让你给他传要打的牌
                 if (de.content.Equals("" + de.room_id))
                 {
                     setdapai();
                     canvas = GameObject.Find("Canvas");
-                    Image timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
+                    timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
                     timei.gameObject.SetActive(true);
                     timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(1);
                     if (nowcard != null)
@@ -165,6 +170,13 @@ public class Mainlogic : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","0"}
                     });
+
+                }
+                else
+                {
+                    timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
+                    timei.gameObject.SetActive(true);
+                    timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(4);
                 }
                 
                 break;
@@ -298,10 +310,14 @@ public class Mainlogic : MonoBehaviour
                 btn.transform.Find("Text").gameObject.SetActive(false);
                 btn.GetComponent<couserController>().setTwoCard(de.cards[6], de.cards[7]);
 
+                timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
+                timei.gameObject.SetActive(true);
+                timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(3);
                 break;
             case "askchoice":
                 if (de.content.Equals("" + de.room_id))
-                {string cbtn = "courseButton";
+                {
+                    string cbtn = "courseButton";
                     GameObject.Find("chooseCoursePanel").transform.Find("remindText").gameObject.SetActive(true);
                     for (int i = 0; i < 4; i++)
                     {
@@ -314,8 +330,13 @@ public class Mainlogic : MonoBehaviour
                         }
                         
                     }
-                    
+                    canvas = GameObject.Find("Canvas");
+                    timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
+                    timei.gameObject.SetActive(true);
+                    timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(5);
+
                 }
+                
 
                 break;
             default:
@@ -432,9 +453,19 @@ public class Mainlogic : MonoBehaviour
         int handpos = gethandpos(id,player);
         if(handpos>=0)
         {
-            CardObject drp = players[player].handcard[handpos];
-            players[player].handcard[handpos] = nowcard;
-            nowcard = drp;
+            if (nowcard.card.transform.localPosition == players[player].getpos)
+            {
+                CardObject drp = players[player].handcard[handpos];
+                players[player].handcard[handpos] = nowcard;
+                nowcard = drp;
+            }
+            else
+            {
+                CardObject drp = players[player].handcard[handpos];
+                players[player].handcard[handpos] =null;
+                nowcard = drp;
+            }
+            
         }
             nowcard.card.transform.localPosition = players[player].dropzone;
             nowcard.card.transform.localRotation= players[player].deskRotation;
