@@ -18,7 +18,7 @@ public class decodedic
     public bool[] whichispicked=new bool[4];
     public bool[] readystatement = new bool[4];
     public int cardheapnum;
-
+    public int lastplayer;
     public int[] pairlist;
 
     public string gerenscore;
@@ -149,6 +149,7 @@ public class decodedic
         {
             content = dic["card"];
             cards[0] = int.Parse(content);
+            lastplayer = player;
         }
         else if (type.Equals("cpg"))
         {

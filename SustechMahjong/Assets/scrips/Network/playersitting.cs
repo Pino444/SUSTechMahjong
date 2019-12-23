@@ -155,7 +155,7 @@ class Antiplayer : playersetting
         base.faceRotation = new Quaternion(0, -1, 0, 0);
         base.handposition = new Vector3(-0.16f, 0.015f, -0.26f);
         base.dropzone = new Vector3(-0.06f, 0.007f, -0.09f);
-        base.outzone = new Vector3(0.336f, 0.007f, 0.328f);
+        base.outzone = new Vector3(0.336f, 0.007f, -0.328f);
         base.getpos = new Vector3(0.188f, 0.015f, -0.261f);
 
     }

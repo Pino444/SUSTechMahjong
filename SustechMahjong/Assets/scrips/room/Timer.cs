@@ -54,8 +54,8 @@ public class Timer : MonoBehaviour
                         {"room",PlayerPrefs.GetString("room")},
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","1"}
-                        
                     });
+                    GameObject.Find("Canvas").transform.Find("chooseMentorPanel").gameObject.SetActive(false);
                     statement = -1;
                     break;
                 case 3:
@@ -67,6 +67,8 @@ public class Timer : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","1"}
                     });
+                    GameObject.Find("Canvas").transform.Find("chooseCoursePanel").transform.Find("Slider").GetComponent<Slider>().maxValue -= 1;
+                    GameObject.Find("Canvas").transform.Find("chooseCoursePanel").transform.Find("scoreButton").GetComponent<Button>().interactable = false;
                     statement = -1;
                     break;
                 case 4:
@@ -78,16 +80,30 @@ public class Timer : MonoBehaviour
                         {"room_id",PlayerPrefs.GetString("room_id")},
                         {"content","0"}
                     });
+                    GameObject.Find("Canvas").transform.Find("cpgh").gameObject.SetActive(false);
+                    GameObject.Find("Canvas").transform.Find("mutilChiPanel").gameObject.SetActive(false);
                     statement = -1;
                     break;
-                case 5://TODO
-//                    networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
-//                    {
-//                        {"type", "quitroom"},
-//                        {"socket_id", PlayerPrefs.GetString("socket_id")},
-//                        {"room",PlayerPrefs.GetString("room")},
-//                        {"room_id",PlayerPrefs.GetString("room_id")}
-//                    });
+                case 5:
+                    Image pl=GameObject.Find("Canvas").transform.Find("chooseCoursePanel").GetComponent<Image>();
+                    string nm = "courseButton";
+                    string send = "";
+                    for(int i = 1; i <= 4; i++)
+                    {
+                        if(pl.transform.Find(nm + i).GetComponent<Button>().interactable){
+                            send += i;
+                            break;
+                        }
+                    }
+                    networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+                    {
+                        {"type", "choice"},
+                        {"socket_id", PlayerPrefs.GetString("socket_id")},
+                        {"room",PlayerPrefs.GetString("room")},
+                        {"room_id",PlayerPrefs.GetString("room_id")},
+                        {"content",send }
+                    });
+                    GameObject.Find("Canvas").transform.Find("chooseCoursePanel").gameObject.SetActive(false);
                     statement = -1;
                     break;
                 default:

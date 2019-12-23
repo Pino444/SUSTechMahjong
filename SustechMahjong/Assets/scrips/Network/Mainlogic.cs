@@ -185,8 +185,12 @@ public class Mainlogic : MonoBehaviour
                 {
                     anim = GameObject.Find("Hand1").GetComponent<Animator>();
                     anim.SetTrigger(name: "takeTrigger");
-                    //StartCoroutine(delayPlayCard());
-                   //break;
+                    Debug.Log("anim Play!");
+                    dropcard(de.cards[0], de.player);
+                    nowcard.card.SetActive(false);
+                    CardObject p = nowcard;
+                    StartCoroutine(delayPlayCard(p));
+                    break;
                 }
                 dropcard(de.cards[0], de.player);
                 
@@ -360,11 +364,7 @@ public class Mainlogic : MonoBehaviour
         print(a);
     }
     
-    IEnumerator delayPlayCard()
-    {
-        yield return new WaitForSeconds(0.8f);
-        dropcard(de.cards[0], de.player);
-    }
+   
     void givecard(int[] id,int player)//发牌到玩家
     {
 
@@ -474,10 +474,17 @@ public class Mainlogic : MonoBehaviour
             nowcard.card.transform.localPosition = players[player].dropzone;
             nowcard.card.transform.localRotation= players[player].deskRotation;
         nowcard.card.GetComponent<cardactivity>().setcan(false);
+
         players[player].nextdrop();
             showcard(player);
+
     }
-//吃碰杠
+    IEnumerator delayPlayCard(CardObject p)
+    {
+        yield return new WaitForSeconds(0.95f);
+        p.card.SetActive(true);
+    }
+    //吃碰杠
     void outcard(int[] ids,int player)
     {
         Debug.Log(player);
@@ -500,7 +507,7 @@ public class Mainlogic : MonoBehaviour
                 nowcard.card.transform.localRotation= players[player].deskRotation;
                 nowcard.card.GetComponent<cardactivity>().setcan(false);
                 Debug.Log(players[player].outzone);
-                players[player].lastdrop();
+                players[de.lastplayer].lastdrop();
             }
         }
         showcard(player);

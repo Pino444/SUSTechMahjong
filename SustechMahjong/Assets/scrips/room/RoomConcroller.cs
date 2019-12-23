@@ -175,4 +175,24 @@ public class RoomConcroller : MonoBehaviour
         GameObject hupanel = GameObject.Find("huPanel");
         hupanel.SetActive(false);
     }
+    Animator anim;
+    bool case1 = false;
+    public void onTestButtonClick()
+    {
+        anim = GameObject.Find("Hand1").GetComponent<Animator>();
+        anim.SetTrigger(name: "takeTrigger");
+//        if (case1)
+//        {
+//            anim.SetBool("boo1",true);
+//            anim.SetBool("boo2",false);
+//            case1 = true;
+//        }
+//        else
+//        {
+//            anim.SetBool("boo1",false);
+//            anim.SetBool("boo2",true);
+//            case1 = false;
+//        }
+        
+    }
 }
