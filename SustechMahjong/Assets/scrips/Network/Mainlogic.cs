@@ -196,7 +196,9 @@ public class Mainlogic : MonoBehaviour
                 
                 break;
             case "cpg":
-                outcard(de.cards, de.player);
+                int cpl = de.player;
+                int lpl = de.lastplayer;
+                outcard(de.cards, cpl,lpl);
                 break;
             case "roominfo":
                 ESWN(de.room_id);
@@ -347,21 +349,28 @@ public class Mainlogic : MonoBehaviour
                 Debug.Log("what the fuck command!?");
                 break;
         }
+        printsomething();
     }
 
     void printsomething()
     {
-        print("operation player:" + de.player);
-        string a = "";
-        foreach (CardObject co in players[0].handcard)
+        
+        for (int i = 0; i < 4; i++)
         {
-            if (co == null)
+            print("hand of player:" + i);
+            string a = "";
+
+            foreach (CardObject co in players[i].handcard)
             {
-                break;
+                if (co == null)
+                {
+                    break;
+                }
+                a += (" " + co.id + ",");
             }
-            a += (" "+co.id+",");
+            print(a);
         }
-        print(a);
+        
     }
     
    
@@ -485,9 +494,12 @@ public class Mainlogic : MonoBehaviour
         p.card.SetActive(true);
     }
     //吃碰杠
-    void outcard(int[] ids,int player)
+    void outcard(int[] ids,int player,int lastplayer)
     {
-        Debug.Log(player);
+        Debug.Log("player" + player);
+        Debug.Log("Lplayer" + lastplayer);
+        players[lastplayer].lastdrop();
+        CardObject n = nowcard;
         for (int i = 0; i < ids.Length; i++)
         {
             int handpos = gethandpos(ids[i],player);
@@ -498,16 +510,17 @@ public class Mainlogic : MonoBehaviour
                 Debug.Log(players[player].outzone);
                 drp.card.transform.localRotation = players[player].deskRotation;
                 drp.card.GetComponent<cardactivity>().setcan(false);
+                Debug.Log(drp.id);
                 players[player].handcard[handpos] = null;
 
             }
             else
             {
-                nowcard.card.transform.localPosition = players[player].getoutpos();
-                nowcard.card.transform.localRotation= players[player].deskRotation;
-                nowcard.card.GetComponent<cardactivity>().setcan(false);
-                Debug.Log(players[player].outzone);
-                players[de.lastplayer].lastdrop();
+                n.card.transform.localPosition = players[player].getoutpos();
+                n.card.transform.localRotation= players[player].deskRotation;
+                n.card.GetComponent<cardactivity>().setcan(false);
+                Debug.Log(n.id);
+               
             }
         }
         showcard(player);
@@ -542,7 +555,7 @@ public class Mainlogic : MonoBehaviour
 
     void showcard(int player)//重新排序
     {
-        printsomething();
+
         reordercard(player);
         int i = 0;
         foreach (CardObject conb in players[player].handcard)

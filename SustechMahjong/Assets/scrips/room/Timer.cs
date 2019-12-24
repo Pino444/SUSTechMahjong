@@ -45,6 +45,7 @@ public class Timer : MonoBehaviour
                         {"content","-1"}
                     });
                     statement = -1;
+                    GameObject.Find("Network").GetComponent<Mainlogic>().setdapaifalse();
                     break;
                 case 2://TODO
                     networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
