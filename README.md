@@ -1,2 +1,3 @@
 # SUSTechMahjong
-A Mahjong Game base on Unity 3D
+基于unity3D的麻将游戏前端
+必须要连接服务器才能正常游戏
