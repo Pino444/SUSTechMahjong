@@ -70,7 +70,7 @@ class Nextplayer : playersetting
         dropzone.z += 0.024f;
         if (dropzone.z > 0.06)
         {
-            dropzone.z = -0.06f;
+            dropzone.z = -0.036f;
             dropzone.x += 0.034f;
         }
     }
@@ -129,7 +129,7 @@ class Frontplayer : playersetting
         dropzone.z -= 0.024f;
         if (dropzone.z < -0.06)
         {
-            dropzone.z = 0.06f;
+            dropzone.z = 0.036f;
             dropzone.x -= 0.034f;
         }
     }
@@ -189,7 +189,7 @@ class Antiplayer : playersetting
         dropzone.x -= 0.024f;
         if (dropzone.x < -0.06)
         {
-            dropzone.x = 0.06f;
+            dropzone.x = 0.036f;
             dropzone.z += 0.034f;
         }
         
@@ -259,7 +259,7 @@ class Thisplayer : playersetting
         dropzone.x += 0.024f;
         if (dropzone.x > 0.06)
         {
-            dropzone.x = -0.06f;
+            dropzone.x = -0.036f;
             dropzone.z -= 0.034f;
         }
     }

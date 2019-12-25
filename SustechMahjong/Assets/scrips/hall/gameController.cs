@@ -76,6 +76,7 @@ public class gameController : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"content",PlayerPrefs.GetString("nickName")}
         });
+        networkManeger.GetComponent<Mainlogic>().refreshScence();
         SceneManager.LoadScene("room1");
     }
 
@@ -124,6 +125,27 @@ public class gameController : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"content",PlayerPrefs.GetString("nickName")}
         });
+        networkManeger.GetComponent<Mainlogic>().refreshScence();
         SceneManager.LoadScene("room1");
+    }
+    
+    public void onAudioValueChange(float value)
+    {
+        //改变音量
+        GameObject.Find("Network").GetComponent<AudioSource>().volume = value;
+    }
+
+//    private bool isPlaying = true;
+    public void onMusicToggleChange(bool value)
+    {
+        if (value == true)
+        {
+            GameObject.Find("Network").GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            GameObject.Find("Network").GetComponent<AudioSource>().Stop();
+        }
+        
     }
 }

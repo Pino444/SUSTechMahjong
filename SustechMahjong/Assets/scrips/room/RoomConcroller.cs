@@ -59,7 +59,6 @@ public class RoomConcroller : MonoBehaviour
 
     public void onScoreValueChange(float value)
     {
-        print(value);
         PlayerPrefs.SetString("score",Convert.ToString((int)value));
         chooseCourseButton.GetComponent<Text>().text = "投入的积分是：\n"+Convert.ToString((int)value);
     }
@@ -75,7 +74,9 @@ public class RoomConcroller : MonoBehaviour
             {"content",PlayerPrefs.GetString("score")}
         });
         GameObject.Find("Slider").GetComponent<Slider>().maxValue -= int.Parse(PlayerPrefs.GetString("score"));
-        GameObject.Find("scoreButton").GetComponent<Button>().interactable = false;
+//        GameObject.Find("scoreButton").GetComponent<Button>().interactable = false;
+        GameObject.Find("scoreButton").gameObject.SetActive(false);
+        GameObject.Find("Slider").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("TimerImage").gameObject.SetActive(false);
     }
 
@@ -192,6 +193,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
+            {"player",PlayerPrefs.GetString("room_id")},
             {"content","1"}
         });
         mook.transform.Find("mookImage").gameObject.SetActive(false);
@@ -206,6 +208,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
+            {"player",PlayerPrefs.GetString("room_id")},
             {"content","2"}
         });
         mook.transform.Find("mookImage").gameObject.SetActive(false);
@@ -219,6 +222,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
+            {"player",PlayerPrefs.GetString("room_id")},
             {"content","3"}
         });
         mook.transform.Find("mookImage").gameObject.SetActive(false);
@@ -232,6 +236,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
+            {"player",PlayerPrefs.GetString("room_id")},
             {"content","4"}
         });
         mook.transform.Find("mookImage").gameObject.SetActive(false);
@@ -245,6 +250,7 @@ public class RoomConcroller : MonoBehaviour
             {"socket_id", PlayerPrefs.GetString("socket_id")},
             {"room",PlayerPrefs.GetString("room")},
             {"room_id",PlayerPrefs.GetString("room_id")},
+            {"player",PlayerPrefs.GetString("room_id")},
             {"content","5"}
         });
         mook.transform.Find("mookImage").gameObject.SetActive(false);
@@ -257,20 +263,8 @@ public class RoomConcroller : MonoBehaviour
     bool case1 = false;
     public void onTestButtonClick()
     {
-        anim = GameObject.Find("Hand1").GetComponent<Animator>();
-        anim.SetTrigger(name: "takeTrigger");
-//        if (case1)
-//        {
-//            anim.SetBool("boo1",true);
-//            anim.SetBool("boo2",false);
-//            case1 = true;
-//        }
-//        else
-//        {
-//            anim.SetBool("boo1",false);
-//            anim.SetBool("boo2",true);
-//            case1 = false;
-//        }
-        
+        anim = GameObject.Find("chiAnim").GetComponent<Animator>();
+        anim.SetTrigger(name: "chiTrigger");
+        Debug.Log("chiAnim!");
     }
 }

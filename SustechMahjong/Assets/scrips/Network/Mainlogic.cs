@@ -37,6 +37,8 @@ public class Mainlogic : MonoBehaviour
     public GameObject[] cardlist;
 
     public Sprite[] cardImage;
+
+    public Sprite[] spbuttonimage;
     //CardObject[] handcard = new CardObject[13];
     CardObject nowcard;
     playersetting[] players = { new Thisplayer(), new Nextplayer(), new Antiplayer(), new Frontplayer() };
@@ -54,6 +56,7 @@ public class Mainlogic : MonoBehaviour
     public Button chibut;
     public Animator anim;
     Image timei;
+    private String[] marenSentences = {"哎呀哎呀，一不小心就胡了啊！","不要吵了，不要吵了，吵什么吵嘛，专心玩游戏吧！","大家小心，我听牌了","快点啊，都等我花都谢了","你这牌打得也忒好了！" };
 
     GameObject eswn;
     private void Awake()
@@ -63,8 +66,20 @@ public class Mainlogic : MonoBehaviour
         de= new decodedic();
     }
 
+    public void refreshScence()
+    {
+        players[0] = new Thisplayer();
+        players[1] = new Nextplayer();
+        players[2] = new Antiplayer();
+        players[3] = new Frontplayer();
+        de=new decodedic();
+        
+    }
+    
     public void excute(Dictionary<String,String>command)
     {
+        Debug.Log("executecommond:");
+        Debug.Log(de.DictionaryToStr(command));
         if (nowcard != null)
         {
             Debug.Log("nowcard:");
@@ -72,7 +87,7 @@ public class Mainlogic : MonoBehaviour
             Debug.Log(nowcard.card);
 
         }
-        
+        //GameObject.Find("Canvas").transform.Find("Instruction").GetComponent<Text>().text = de.DictionaryToStr(command);
         de.decodeinstruction(command);
         switch (de.type){
             case "initcard":
@@ -92,14 +107,14 @@ public class Mainlogic : MonoBehaviour
                 timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(2);
                 break;
             case "askcard"://服务器让你给他传要打的牌
-                if (de.content.Equals("" + de.room_id))
+                if (de.content.Equals(de.roomidstr))
                 {
                     setdapai();
                     canvas = GameObject.Find("Canvas");
                     timei = canvas.transform.Find("TimerImage").GetComponent<Image>();
                     timei.gameObject.SetActive(true);
                     timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(1);
-                    if (nowcard != null)
+                    if (nowcard != null && nowcard.card.transform.localPosition==players[0].getpos)
                     {
                         nowcard.card.GetComponent<cardactivity>().setcan(true);
                     }
@@ -154,10 +169,18 @@ public class Mainlogic : MonoBehaviour
                 Button gang = cpgh.transform.Find("gangButton5").GetComponent<Button>();
                 Button hu = cpgh.transform.Find("huButton6").GetComponent<Button>();
                 Button cancel = cpgh.transform.Find("cancelButton0").GetComponent<Button>();
-                chibut.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]);
-                peng.gameObject.SetActive(de.butt[3]);
-                gang.gameObject.SetActive(de.butt[4]);
-                hu.gameObject.SetActive(de.butt[5]);
+                chibut.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
+                chibut.interactable=(de.butt[0]|de.butt[1]|de.butt[2]);
+                decidebtnImage(chibut, 0);
+                peng.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
+                peng.interactable = de.butt[3];
+                decidebtnImage(peng,2);
+                gang.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
+                gang.interactable = de.butt[4];
+                decidebtnImage(gang,4);
+                hu.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
+                hu.interactable = de.butt[5];
+                decidebtnImage(hu,6);
                 cancel.gameObject.SetActive(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]);
                 if (!(de.butt[0]|de.butt[1]|de.butt[2]|de.butt[3]|de.butt[4]|de.butt[5]))
                 {
@@ -198,7 +221,8 @@ public class Mainlogic : MonoBehaviour
             case "cpg":
                 int cpl = de.player;
                 int lpl = de.lastplayer;
-                outcard(de.cards, cpl,lpl);
+                outcard(de.cards, cpl,lpl,de.kind);
+                
                 break;
             case "roominfo":
                 ESWN(de.room_id);
@@ -211,7 +235,7 @@ public class Mainlogic : MonoBehaviour
                 name2 = GameObject.Find("nextPlayer");
                 name3 = GameObject.Find("oppositePlayer");
                 name4 = GameObject.Find("lastPlayer");
-                
+                print(de.names);
                 name1.transform.Find("Text").GetComponent<Text>().text = de.names[0];
                 name2.transform.Find("Text").GetComponent<Text>().text = de.names[1];
                 name3.transform.Find("Text").GetComponent<Text>().text = de.names[2];
@@ -280,11 +304,47 @@ public class Mainlogic : MonoBehaviour
             case "id":
                 
                 break;
+
+            case "mook":
+                int mookpl = int.Parse(de.mookplayer);
+                mookpl = (mookpl + 4 - de.room_id) % 4+1;
+                string mookname = "play"+mookpl+"MookImage";
+                Debug.Log(mookname);
+                Image whotalk = GameObject.Find("Canvas").transform.Find("mook").transform.Find(mookname).GetComponent<Image>();
+                whotalk.gameObject.SetActive(true);
+                whotalk.transform.Find("Text").GetComponent<Text>().text = marenSentences[de.mooktype-1];
+                StartCoroutine(delayImageDisappear(whotalk));
+                switch (de.mooktype)
+                {
+                    case 1:
+                        GameObject.Find("mookAudio1").GetComponent<AudioSource>().Play();
+                        
+                        break;
+                    case 2:
+                        GameObject.Find("mookAudio2").GetComponent<AudioSource>().Play();
+                        
+                        break;
+                    case 3:
+                        GameObject.Find("mookAudio3").GetComponent<AudioSource>().Play();
+                        break;
+                    case 4:
+                        GameObject.Find("mookAudio4").GetComponent<AudioSource>().Play();
+                        break;
+                    case 5:
+                        GameObject.Find("mookAudio5").GetComponent<AudioSource>().Play();
+                        break;
+                    default:
+                        Debug.Log("No such Mook!");
+                        break;
+                }
+                break;
             case "pair":
                 de.whichispicked = new bool[4];
                 canvas = GameObject.Find("Canvas");
                 canvas.transform.Find("chooseCoursePanel").gameObject.SetActive(true);
                 GameObject.Find("chooseCoursePanel").transform.Find("remindText").gameObject.SetActive(false);
+                GameObject.Find("chooseCoursePanel").transform.Find("Slider").gameObject.SetActive(true);
+                GameObject.Find("chooseCoursePanel").transform.Find("scoreButton").gameObject.SetActive(true);
                 chosepanel = GameObject.Find("chooseCoursePanel");
                 GameObject.Find("scoreButton").GetComponent<Button>().interactable = true;
                 Button btn = GameObject.Find("courseButton1").GetComponent<Button>();
@@ -321,7 +381,7 @@ public class Mainlogic : MonoBehaviour
                 timei.gameObject.transform.Find("TimerText").GetComponent<Timer>().setStatment(3);
                 break;
             case "askchoice":
-                if (de.content.Equals("" + de.room_id))
+                if (de.content.Equals(de.roomidstr))
                 {
                     string cbtn = "courseButton";
                     GameObject.Find("chooseCoursePanel").transform.Find("remindText").gameObject.SetActive(true);
@@ -349,29 +409,21 @@ public class Mainlogic : MonoBehaviour
                 Debug.Log("what the fuck command!?");
                 break;
         }
-        printsomething();
+
     }
 
-    void printsomething()
+    void decidebtnImage(Button btn, int kind)
     {
-        
-        for (int i = 0; i < 4; i++)
+        if (btn.interactable)
         {
-            print("hand of player:" + i);
-            string a = "";
-
-            foreach (CardObject co in players[i].handcard)
-            {
-                if (co == null)
-                {
-                    break;
-                }
-                a += (" " + co.id + ",");
-            }
-            print(a);
+            btn.gameObject.GetComponent<Image>().sprite = spbuttonimage[kind];
         }
-        
+        else
+        {
+            btn.gameObject.GetComponent<Image>().sprite = spbuttonimage[kind + 1];
+        }
     }
+    
     
    
     void givecard(int[] id,int player)//发牌到玩家
@@ -462,7 +514,11 @@ public class Mainlogic : MonoBehaviour
 //打出牌
     void dropcard(int id,int player)
     {
-        Debug.Log(id);
+        if (player != 0)
+        {
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+        }
+        
         int handpos = gethandpos(id,player);
         if(handpos>=0)
         {
@@ -480,24 +536,29 @@ public class Mainlogic : MonoBehaviour
             }
             
         }
-            nowcard.card.transform.localPosition = players[player].dropzone;
-            nowcard.card.transform.localRotation= players[player].deskRotation;
+        nowcard.card.transform.localPosition = players[player].dropzone;
+        nowcard.card.transform.localRotation= players[player].deskRotation;
         nowcard.card.GetComponent<cardactivity>().setcan(false);
 
         players[player].nextdrop();
             showcard(player);
 
     }
+
+    IEnumerator delayImageDisappear(Image p)
+    {
+        yield return new WaitForSeconds(3.0f);
+        p.gameObject.SetActive(false);
+    }
     IEnumerator delayPlayCard(CardObject p)
     {
         yield return new WaitForSeconds(0.95f);
         p.card.SetActive(true);
+        GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
     }
     //吃碰杠
-    void outcard(int[] ids,int player,int lastplayer)
+    void outcard(int[] ids,int player,int lastplayer,string kind)
     {
-        Debug.Log("player" + player);
-        Debug.Log("Lplayer" + lastplayer);
         players[lastplayer].lastdrop();
         CardObject n = nowcard;
         for (int i = 0; i < ids.Length; i++)
@@ -505,12 +566,10 @@ public class Mainlogic : MonoBehaviour
             int handpos = gethandpos(ids[i],player);
             if (handpos >= 0)
             {
+                players[player].handcard[handpos].card.GetComponent<cardactivity>().setcan(false);
                 CardObject drp = players[player].handcard[handpos];
                 drp.card.transform.localPosition = players[player].getoutpos();
-                Debug.Log(players[player].outzone);
                 drp.card.transform.localRotation = players[player].deskRotation;
-                drp.card.GetComponent<cardactivity>().setcan(false);
-                Debug.Log(drp.id);
                 players[player].handcard[handpos] = null;
 
             }
@@ -522,6 +581,16 @@ public class Mainlogic : MonoBehaviour
                 Debug.Log(n.id);
                
             }
+        }
+        if (kind.Equals("c"))
+        {
+            GameObject.Find("chiAudio").GetComponent<AudioSource>().Play();
+        }else if (kind.Equals("p"))
+        {
+            GameObject.Find("pengAudio").GetComponent<AudioSource>().Play();
+        }else if (kind.Equals("g"))
+        {
+            GameObject.Find("gangAudio").GetComponent<AudioSource>().Play();
         }
         showcard(player);
     }

@@ -20,11 +20,18 @@ public class decodedic
     public int cardheapnum;
     public int lastplayer;
     public int[] pairlist;
-
+    public string roomidstr;
     public string gerenscore;
     //if end use those parameter
     public string[] finalscore;
     public string[] playernames;
+    //the mook operation
+    public string mookplayer;
+    public int mooktype;
+    //cpgtype
+    public string kind;
+
+
     // Start is called before the first frame updbuttate
     public void decodeinstruction(Dictionary<string,string> dic)
     {
@@ -41,7 +48,10 @@ public class decodedic
             room = dic["room"];
 
         }
-
+        if (dic.ContainsKey("room_id"))
+        {
+            roomidstr = dic["room_id"];
+        }
         if (type.Equals("pair"))
         {
             content = dic["content"];
@@ -154,6 +164,7 @@ public class decodedic
         else if (type.Equals("cpg"))
         {
             content = dic["card"];
+            kind = dic["kind"];
             string[] cardlist = content.Split(' ');
             cards = new int[cardlist.Length];
             for (int i = 0; i < cardlist.Length; i++)
@@ -189,6 +200,10 @@ public class decodedic
             {
                 cards[i] = int.Parse(a[i]);
             }
+        }else if (type.Equals("mook"))
+        {
+            mookplayer = dic["player"];
+            mooktype = int.Parse(dic["content"]);
         }       
         else if (type.Equals("id"))
         {
@@ -233,7 +248,36 @@ public class decodedic
         }
 
     }
-    
+
+    public string DictionaryToStr(IDictionary<string, string> dic)
+
+    {
+
+
+        dic = new SortedDictionary<string, string>(dic);
+
+        string strTemp = string.Empty;
+
+        foreach (KeyValuePair<string, string> item in dic)
+
+        {
+
+            if (!string.IsNullOrEmpty(item.Key) && !string.IsNullOrEmpty(item.Value))
+
+            {
+
+                strTemp += item.Key + ":" + item.Value + ", ";
+
+            }
+
+        }
+
+        strTemp = strTemp.TrimEnd('&');
+
+        return strTemp;
+
+    }
+
 
 
 
