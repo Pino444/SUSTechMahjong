@@ -14,10 +14,12 @@ public class RoomConcroller : MonoBehaviour
     public GameObject networkManeger;
     public GameObject readyButton;
     public GameObject readyState;
+    public GameObject mook;
     private void Awake()
     {
         Debug.Log("awake run");
         networkManeger = GameObject.Find("Network");
+        mook = GameObject.Find("mook");
     }
     
     public void onQuitRoomButtonClick()
@@ -175,6 +177,82 @@ public class RoomConcroller : MonoBehaviour
         GameObject hupanel = GameObject.Find("huPanel");
         hupanel.SetActive(false);
     }
+
+    public void onMookButtonClick()
+    {
+        mook.transform.Find("mookImage").gameObject.SetActive(true);
+        mook.transform.Find("mookButton").gameObject.SetActive(false);
+    }
+
+    public void onMookButton1Click()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "mook"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","1"}
+        });
+        mook.transform.Find("mookImage").gameObject.SetActive(false);
+        mook.transform.Find("mookButton").gameObject.SetActive(true);
+    }
+    
+    public void onMookButton2Click()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "mook"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","2"}
+        });
+        mook.transform.Find("mookImage").gameObject.SetActive(false);
+        mook.transform.Find("mookButton").gameObject.SetActive(true);
+    }
+    public void onMookButton3Click()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "mook"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","3"}
+        });
+        mook.transform.Find("mookImage").gameObject.SetActive(false);
+        mook.transform.Find("mookButton").gameObject.SetActive(true);
+    }
+    public void onMookButton4Click()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "mook"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","4"}
+        });
+        mook.transform.Find("mookImage").gameObject.SetActive(false);
+        mook.transform.Find("mookButton").gameObject.SetActive(true);
+    }
+    public void onMookButton5Click()
+    {
+        networkManeger.GetComponent<NetworkManeger>().sendMsg(new Dictionary<string, string>()
+        {
+            {"type", "mook"},
+            {"socket_id", PlayerPrefs.GetString("socket_id")},
+            {"room",PlayerPrefs.GetString("room")},
+            {"room_id",PlayerPrefs.GetString("room_id")},
+            {"content","5"}
+        });
+        mook.transform.Find("mookImage").gameObject.SetActive(false);
+        mook.transform.Find("mookButton").gameObject.SetActive(true);
+    }
+    
+    
+    
     Animator anim;
     bool case1 = false;
     public void onTestButtonClick()
