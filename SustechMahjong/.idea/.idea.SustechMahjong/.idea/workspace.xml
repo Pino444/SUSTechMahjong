@@ -2,75 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ec50d9-f871-4ae5-8aef-6b2d36f065ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/TimerChange.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Materials/TimerChange.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/TimerChange.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Textures/TimerChange.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物7.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新大物/大物9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代7.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/cardImage/新线代/线代9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/嘲讽/90sheji_linggan_13328831.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/嘲讽/90sheji_linggan_13328831.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/玩.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/玩.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/玩游戏中.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/音效/玩游戏中.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/57fcc07adb1b1c7cbd2dac19c3535cf7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/57fcc07adb1b1c7cbd2dac19c3535cf7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/57fcc07adb1b1c7cbd2dac19c3535cf8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/57fcc07adb1b1c7cbd2dac19c3535cf8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/gk_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/登录/gk_11.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SustechMahjong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/init.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/init.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ip.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ip.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/room1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/card/change.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/card/change.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/吃特效5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/杠 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/碰 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/吃碰杠/胡 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scrips/room/spButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scrips/room/spButtonController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/resources/LowPolyMahjong/Demo/DEMO1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/room/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ip.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/Network/cardactivity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -143,11 +87,11 @@
         <option value="$PROJECT_DIR$/Assets/scrips/room/MentorController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/RoomConcroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/room/spButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/decodedic.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/Network/Mainlogic.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/hall/gameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/Network/playersitting.cs" />
       </list>
     </option>
   </component>
@@ -240,7 +184,7 @@
       <workItem from="1577111633862" duration="3990000" />
       <workItem from="1577203099348" duration="92000" />
       <workItem from="1577247668778" duration="1611000" />
-      <workItem from="1577280218194" duration="10610000" />
+      <workItem from="1577280218194" duration="11624000" />
     </task>
     <servers />
   </component>

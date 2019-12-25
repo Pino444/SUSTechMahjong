@@ -70,7 +70,7 @@ class Nextplayer : playersetting
         dropzone.z += 0.024f;
         if (dropzone.z > 0.06)
         {
-            dropzone.z = -0.036f;
+            dropzone.z = -0.06f;
             dropzone.x += 0.034f;
         }
     }
