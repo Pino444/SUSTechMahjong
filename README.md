@@ -14,7 +14,7 @@
 
 ## 运行
 - 克隆源码后使用unity打开
-- 打开游戏前需要启动服务器，服务器github地址：[后端]（https://github.com/DiogerChen/OOAD_Project）
+- 打开游戏前需要启动服务器，服务器github地址：[后端](https://github.com/DiogerChen/OOAD_Project)
 
 ## 代码说明
 - Assets/resources 下放置了所有的素材，包括麻将桌，麻将子，手的模型，UI等
